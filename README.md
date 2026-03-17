@@ -2,4 +2,12 @@
 
 ## Market intelligence scaffold
 
-A new system scaffold is available in [`system/`](system/README.md) to orchestrate daily scraping, persist artifacts in a queryable DB, and generate LLM-ready analyst report prompts.
+A production-oriented market-intelligence + DBaaS scaffold is available in [`system/`](system/README.md).
+
+It now includes:
+
+- Daily ingestion orchestration.
+- Queryable historical snapshots.
+- Data-quality and freshness audits.
+- FastAPI service endpoints designed for AI agents.
+- Dockerized deployment path for easy hosting.
