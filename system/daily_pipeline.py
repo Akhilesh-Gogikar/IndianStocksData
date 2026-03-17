@@ -47,7 +47,26 @@ DEFAULT_JOBS: tuple[ScraperJob, ...] = (
 
 def initialize_db(connection: sqlite3.Connection, schema_file: Path) -> None:
     connection.executescript(schema_file.read_text(encoding="utf-8"))
+    migrate_raw_documents_schema(connection)
     connection.commit()
+
+
+def migrate_raw_documents_schema(connection: sqlite3.Connection) -> None:
+    existing_columns = {
+        row[1] for row in connection.execute("PRAGMA table_info(raw_documents)").fetchall()
+    }
+
+    if "content_sha256" not in existing_columns:
+        connection.execute("ALTER TABLE raw_documents ADD COLUMN content_sha256 TEXT")
+        connection.execute(
+            "UPDATE raw_documents SET content_sha256 = '' WHERE content_sha256 IS NULL"
+        )
+
+    if "record_count" not in existing_columns:
+        connection.execute("ALTER TABLE raw_documents ADD COLUMN record_count INTEGER")
+
+    if "source_timestamp" not in existing_columns:
+        connection.execute("ALTER TABLE raw_documents ADD COLUMN source_timestamp TEXT")
 
 
 def start_run(connection: sqlite3.Connection) -> int:
