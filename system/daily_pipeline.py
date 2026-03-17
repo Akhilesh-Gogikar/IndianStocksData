@@ -10,6 +10,7 @@ import argparse
 import csv
 import datetime as dt
 import glob
+import hashlib
 import json
 import sqlite3
 import subprocess
@@ -93,27 +94,30 @@ def collect_files(repo_root: Path, patterns: Iterable[str]) -> list[Path]:
     return sorted(set(collected))
 
 
-def parse_file(file_path: Path) -> str:
+def parse_file(file_path: Path) -> tuple[str, int | None]:
     suffix = file_path.suffix.lower()
     if suffix == ".json":
-        return json.dumps(json.loads(file_path.read_text(encoding="utf-8")), ensure_ascii=False)
+        payload = json.loads(file_path.read_text(encoding="utf-8"))
+        count = len(payload) if isinstance(payload, list) else 1
+        return json.dumps(payload, ensure_ascii=False), count
     if suffix == ".csv":
         with file_path.open("r", encoding="utf-8") as handle:
             rows = list(csv.DictReader(handle))
-        return json.dumps(rows, ensure_ascii=False)
-    return file_path.read_text(encoding="utf-8", errors="ignore")
+        return json.dumps(rows, ensure_ascii=False), len(rows)
+    return file_path.read_text(encoding="utf-8", errors="ignore"), None
 
 
 def ingest_documents(connection: sqlite3.Connection, run_id: int, source_name: str, files: list[Path]) -> int:
     inserted = 0
     for file_path in files:
         file_type = file_path.suffix.lower().lstrip(".") or "unknown"
-        content = parse_file(file_path)
-        connection.execute(
+        content, record_count = parse_file(file_path)
+        content_sha256 = hashlib.sha256(content.encode("utf-8")).hexdigest()
+        cursor = connection.execute(
             """
             INSERT OR IGNORE INTO raw_documents
-                (run_id, source_name, file_path, file_type, content, ingested_at)
-            VALUES (?, ?, ?, ?, ?, ?)
+                (run_id, source_name, file_path, file_type, content, content_sha256, record_count, source_timestamp, ingested_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 run_id,
@@ -121,13 +125,63 @@ def ingest_documents(connection: sqlite3.Connection, run_id: int, source_name: s
                 str(file_path),
                 file_type,
                 content,
+                content_sha256,
+                record_count,
+                dt.datetime.utcfromtimestamp(file_path.stat().st_mtime).isoformat(),
                 dt.datetime.utcnow().isoformat(),
             ),
         )
-        inserted += 1
+        inserted += cursor.rowcount if cursor.rowcount > 0 else 0
     connection.commit()
     return inserted
 
+
+
+def run_quality_checks(
+    connection: sqlite3.Connection, run_id: int, jobs: tuple[ScraperJob, ...]
+) -> None:
+    checked_at = dt.datetime.utcnow().isoformat()
+
+    run_date = connection.execute(
+        "SELECT run_date FROM ingestion_runs WHERE run_id = ?", (run_id,)
+    ).fetchone()[0]
+    freshness_status = "pass" if run_date == dt.date.today().isoformat() else "warn"
+    connection.execute(
+        """
+        INSERT INTO data_quality_audits (run_id, check_name, status, details, checked_at)
+        VALUES (?, 'freshness', ?, ?, ?)
+        """,
+        (run_id, freshness_status, f"run_date={run_date}", checked_at),
+    )
+
+    for job in jobs:
+        docs_count = connection.execute(
+            "SELECT COUNT(*) FROM raw_documents WHERE run_id = ? AND source_name = ?",
+            (run_id, job.name),
+        ).fetchone()[0]
+        status = "pass" if docs_count > 0 else "fail"
+        connection.execute(
+            """
+            INSERT INTO data_quality_audits (run_id, check_name, status, details, checked_at)
+            VALUES (?, 'source_coverage', ?, ?, ?)
+            """,
+            (run_id, status, f"source={job.name}, documents={docs_count}", checked_at),
+        )
+
+    missing_hash_count = connection.execute(
+        "SELECT COUNT(*) FROM raw_documents WHERE run_id = ? AND content_sha256 = ''",
+        (run_id,),
+    ).fetchone()[0]
+    hash_status = "pass" if missing_hash_count == 0 else "fail"
+    connection.execute(
+        """
+        INSERT INTO data_quality_audits (run_id, check_name, status, details, checked_at)
+        VALUES (?, 'document_integrity', ?, ?, ?)
+        """,
+        (run_id, hash_status, f"missing_hash_count={missing_hash_count}", checked_at),
+    )
+
+    connection.commit()
 
 def pipeline(repo_root: Path, db_path: Path, jobs: tuple[ScraperJob, ...] = DEFAULT_JOBS) -> int:
     schema_file = repo_root / "system" / "schema.sql"
@@ -142,6 +196,7 @@ def pipeline(repo_root: Path, db_path: Path, jobs: tuple[ScraperJob, ...] = DEFA
             files = collect_files(repo_root, job.output_globs)
             total += ingest_documents(conn, run_id, job.name, files)
 
+        run_quality_checks(conn, run_id, jobs)
         finish_run(conn, run_id, "completed", notes=f"Ingested {total} files")
         return run_id
     except Exception as exc:  # noqa: BLE001

@@ -53,6 +53,17 @@ def fetch_context(conn: sqlite3.Connection, ticker: str, limit: int = 20) -> dic
         (run_id, limit),
     ).fetchall()
 
+
+    quality_checks = conn.execute(
+        """
+        SELECT check_name, status, details
+        FROM data_quality_audits
+        WHERE run_id = ?
+        ORDER BY audit_id DESC
+        """,
+        (run_id,),
+    ).fetchall()
+
     risk_signals = conn.execute(
         """
         SELECT entity_name, region, risk_type, signal_strength, rationale
@@ -69,6 +80,10 @@ def fetch_context(conn: sqlite3.Connection, ticker: str, limit: int = 20) -> dic
         "run_id": run_id,
         "documents": [
             {"source": d[0], "type": d[1], "content": d[2][:3000]} for d in documents
+        ],
+        "quality_checks": [
+            {"check_name": q[0], "status": q[1], "details": q[2]}
+            for q in quality_checks
         ],
         "risk_signals": [
             {

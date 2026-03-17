@@ -1,0 +1,11 @@
+services:
+  indian-stocks-dbaas:
+    build:
+      context: ..
+      dockerfile: system/Dockerfile
+    container_name: indian-stocks-dbaas
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
