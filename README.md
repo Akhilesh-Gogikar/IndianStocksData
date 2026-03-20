@@ -9,5 +9,17 @@ It now includes:
 - Daily ingestion orchestration.
 - Queryable historical snapshots.
 - Data-quality and freshness audits.
-- FastAPI service endpoints designed for AI agents.
+- Composable FastAPI profiles for market-data and agent-runtime APIs.
+- Agent discovery endpoints and workflow manifests for AI-native integrations.
 - Dockerized deployment path for easy hosting.
+- Make targets that let you run the right API surface quickly.
+
+## Quick commands
+
+```bash
+make api-profiles
+make api-market-data
+make api-agent-runtime
+```
+
+Use `PROFILE=full` with `make api` to expose every route from a single process.
