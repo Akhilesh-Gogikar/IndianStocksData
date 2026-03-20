@@ -4,6 +4,8 @@ services:
       context: ..
       dockerfile: system/Dockerfile
     container_name: indian-stocks-dbaas
+    environment:
+      API_PROFILE: ${API_PROFILE:-full}
     ports:
       - "8000:8000"
     volumes:
