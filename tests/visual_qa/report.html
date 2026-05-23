@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerebral Insights - Visual QA Automation Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090b10;
+      --surface: rgba(22, 28, 45, 0.4);
+      --surface-border: rgba(255, 255, 255, 0.08);
+      --surface-active: rgba(22, 28, 45, 0.8);
+      --primary: #1a73e8;
+      --primary-glow: rgba(26, 115, 232, 0.35);
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --green: #10b981;
+      --green-glow: rgba(16, 185, 129, 0.2);
+      --red: #ef4444;
+      --red-glow: rgba(239, 68, 68, 0.2);
+      --yellow: #f59e0b;
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(26, 115, 232, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      padding: 32px;
+      line-height: 1.5;
+    }
+
+    header {
+      max-width: 1400px;
+      margin: 0 auto 32px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--surface-border);
+      padding-bottom: 24px;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-badge {
+      background: linear-gradient(135deg, var(--primary), var(--green));
+      color: #fff;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.5rem;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px var(--primary-glow);
+    }
+
+    .brand-titles h1 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-titles p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .meta-summary {
+      display: flex;
+      gap: 24px;
+    }
+
+    .meta-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      padding: 12px 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(12px);
+      text-align: right;
+    }
+
+    .meta-card span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .meta-card strong {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: #fff;
+    }
+
+    .main-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* Left Sidebar - Step Navigation List */
+    .sidebar {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(16px);
+      max-height: 80vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar h2 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid transparent;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+
+    .step-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .step-item.active {
+      background: var(--surface-active);
+      border-color: var(--primary);
+      box-shadow: 0 0 12px var(--primary-glow);
+    }
+
+    .step-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .step-badge.pass {
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green-glow);
+    }
+
+    .step-badge.fail {
+      background: var(--red);
+      box-shadow: 0 0 8px var(--red-glow);
+    }
+
+    .step-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .step-info strong {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #fff;
+    }
+
+    .step-info span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Right Main Panel - Screenshot Inspection & Details */
+    .content-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .details-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .details-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--surface-border);
+      padding-bottom: 16px;
+    }
+
+    .details-title h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .details-title span {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .status-pill {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 100px;
+      letter-spacing: 0.05em;
+    }
+
+    .status-pill.pass {
+      background: var(--green-glow);
+      color: var(--green);
+      border: 1px solid var(--green);
+    }
+
+    .status-pill.fail {
+      background: var(--red-glow);
+      color: var(--red);
+      border: 1px solid var(--red);
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+
+    .details-block h4 {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .details-block p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .assertions-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .assertion-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .assertion-item::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: bold;
+    }
+
+    .assertion-item.fail::before {
+      content: "✗";
+      color: var(--red);
+    }
+
+    .screenshot-viewer {
+      background: #0d1117;
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    .screenshot-viewer img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.05);
+      cursor: zoom-in;
+      transition: transform 0.2s ease;
+    }
+
+    .viewer-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 8px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .viewer-footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .viewer-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lightbox Overlay */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(4, 6, 10, 0.95);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 40px;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 12px 64px rgba(0,0,0,0.8);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: #fff;
+      font-size: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: all 0.2s ease;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: #fff;
+    }
+
+    /* Custom Scrollbar for premium feeling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-section">
+      <div class="logo-badge">CI</div>
+      <div class="brand-titles">
+        <h1>Visual QA Automation Report</h1>
+        <p>Harnessed E2E Test Suite & Screenshot Catalog for Cerebral Insights</p>
+      </div>
+    </div>
+    <div class="meta-summary">
+      <div class="meta-card">
+        <span>Execution Status</span>
+        <strong style="color: var(--green);">SUCCESS</strong>
+      </div>
+      <div class="meta-card">
+        <span>Total Steps</span>
+        <strong>16 Passed</strong>
+      </div>
+      <div class="meta-card">
+        <span>Timestamp</span>
+        <strong style="font-size: 0.85rem; font-family: var(--font-mono);">2026-05-23 01:27:02 PM</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Steps Navigation Sidebar -->
+    <aside class="sidebar" aria-label="Verification Steps">
+      <h2>Interactive Steps</h2>
+      
+      <button class="step-item active" data-id="step_01" onclick="selectStep('step_01')">
+        <span class="step-badge pass">01</span>
+        <div class="step-info">
+          <strong>Landing Page</strong>
+          <span>Landing view panel matches display guidelines</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_02" onclick="selectStep('step_02')">
+        <span class="step-badge pass">02</span>
+        <div class="step-info">
+          <strong>SignUp Form</strong>
+          <span>SignUp register card is displayed cleanly in the viewport</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_03" onclick="selectStep('step_03')">
+        <span class="step-badge pass">03</span>
+        <div class="step-info">
+          <strong>MFA Wizard - Scan QR</strong>
+          <span>MFA multi-step onboarding wizard replaces the signup card</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_04" onclick="selectStep('step_04')">
+        <span class="step-badge pass">04</span>
+        <div class="step-info">
+          <strong>MFA Wizard - Token Verification</strong>
+          <span>Step 2 verification token prompt is visible</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_05" onclick="selectStep('step_05')">
+        <span class="step-badge pass">05</span>
+        <div class="step-info">
+          <strong>MFA Wizard - Backup Recovery Keys</strong>
+          <span>Step 3 backup keys listing is rendered upon token verification</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_06" onclick="selectStep('step_06')">
+        <span class="step-badge pass">06</span>
+        <div class="step-info">
+          <strong>SignIn Form</strong>
+          <span>SignIn login card renders properly</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_07" onclick="selectStep('step_07')">
+        <span class="step-badge pass">07</span>
+        <div class="step-info">
+          <strong>SignIn MFA Code Verification</strong>
+          <span>MFA verification challenge input renders</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_08" onclick="selectStep('step_08')">
+        <span class="step-badge pass">08</span>
+        <div class="step-info">
+          <strong>Authenticated Dashboard</strong>
+          <span>Welcome back home user greeting banner renders</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_09" onclick="selectStep('step_09')">
+        <span class="step-badge pass">09</span>
+        <div class="step-info">
+          <strong>Market Radar Workspace</strong>
+          <span>Crumb highlights current product: 'Equity Screener & Market Radar'</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_10" onclick="selectStep('step_10')">
+        <span class="step-badge pass">10</span>
+        <div class="step-info">
+          <strong>Ask Cerebral - Financial QA Search</strong>
+          <span>Ask Cerebral answer state updates to 'answer_ready'</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_11" onclick="selectStep('step_11')">
+        <span class="step-badge pass">11</span>
+        <div class="step-info">
+          <strong>Ask Cerebral - Agent Playground Directive</strong>
+          <span>Sources documents citation cards are populated and clickable</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_12" onclick="selectStep('step_12')">
+        <span class="step-badge pass">12</span>
+        <div class="step-info">
+          <strong>Buyer Room Workspace</strong>
+          <span>Crumb highlights current product: 'Deal Readiness & Buyer Room'</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_13" onclick="selectStep('step_13')">
+        <span class="step-badge pass">13</span>
+        <div class="step-info">
+          <strong>Trust Registry Workspace</strong>
+          <span>Crumb highlights current product: 'Corporate Governance & Freshness Trust'</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_14" onclick="selectStep('step_14')">
+        <span class="step-badge pass">14</span>
+        <div class="step-info">
+          <strong>Agent Workspace Playground</strong>
+          <span>Crumb highlights current product: 'Agentic Workspace & API Playground'</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_15" onclick="selectStep('step_15')">
+        <span class="step-badge pass">15</span>
+        <div class="step-info">
+          <strong>Profile Billing Plans Drawer</strong>
+          <span>Profile dropdown menu pops out cleanly from the avatar anchor</span>
+        </div>
+      </button>
+        
+
+      <button class="step-item " data-id="step_16" onclick="selectStep('step_16')">
+        <span class="step-badge pass">16</span>
+        <div class="step-info">
+          <strong>Support Ticket Form</strong>
+          <span>Support Ticket input fields support rich descriptions</span>
+        </div>
+      </button>
+        
+    </aside>
+
+    <!-- Interactive Step Panel -->
+    <section class="content-panel" aria-label="Step Inspection Dashboard">
+      <div class="details-card">
+        <div class="details-header">
+          <div class="details-title">
+            <span id="step-number-label">Step 01</span>
+            <h3 id="step-title-display">Landing Page</h3>
+          </div>
+          <span class="status-pill pass" id="step-status-pill">PASSED</span>
+        </div>
+
+        <div class="details-grid">
+          <div class="details-block">
+            <h4>Interaction & Verification Details</h4>
+            <p id="step-description-display">
+              Initial load of the website, showcasing the dynamic SaaS landing page containing the main hero section, product offerings, and starter pricing packages.
+            </p>
+          </div>
+          <div class="details-block">
+            <h4>Assertions Passed</h4>
+            <ul class="assertions-list" id="step-assertions-list">
+              <li class="assertion-item">Landing view section is visible</li>
+              <li class="assertion-item">Header branding brand-info contains "Cerebral Insights"</li>
+              <li class="assertion-item">Marketing pricing grid cards are rendered</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot-viewer">
+        <img id="step-screenshot-display" src="./screenshots/01_landing_page.png" alt="Landing Page Screenshot" onclick="openLightbox(this.src)">
+        <div class="viewer-footer">
+          <span>Viewport: 1280x800 px (Chromium)</span>
+          <a id="step-download-link" href="./screenshots/01_landing_page.png" download>Download High-Res PNG</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img id="lightbox-img" src="" alt="Full Screen Screenshot">
+  </div>
+
+  <script>
+    // Injected Step Database
+    const stepsData = [
+  {
+    "id": "step_01",
+    "index": "01",
+    "title": "Landing Page",
+    "description": "Initial page load showing dynamic marketing operating surface, product cards overview, and Starter/Pro/Max billing grids.",
+    "screenshot": "01_landing_page.png",
+    "status": "pass",
+    "assertions": [
+      "Landing view panel matches display guidelines",
+      "Google-styled headers show brand mark 'CI' and crumb 'Dashboard'",
+      "Curated Indian Equities Value proposition offerings are fully rendered"
+    ]
+  },
+  {
+    "id": "step_02",
+    "index": "02",
+    "title": "SignUp Form",
+    "description": "Registration card toggled from the Landing page actions, enabling operational business email signup and region selection.",
+    "screenshot": "02_signup_form.png",
+    "status": "pass",
+    "assertions": [
+      "SignUp register card is displayed cleanly in the viewport",
+      "Input fields for Business Email, Password, and Operational Region exist",
+      "Transition toggle link to Sign In is visible"
+    ]
+  },
+  {
+    "id": "step_03",
+    "index": "03",
+    "title": "MFA Wizard - Scan QR",
+    "description": "Step 1 of Multi-Factor Authenticator onboarding. Displays provisioning QR Code and seed secret to scan into Microsoft/Google Authenticator.",
+    "screenshot": "03_signup_mfa_step1.png",
+    "status": "pass",
+    "assertions": [
+      "MFA multi-step onboarding wizard replaces the signup card",
+      "Step indicator dots show Step 1 as active",
+      "QR code image and secure authenticator secret seeds are fully populated"
+    ]
+  },
+  {
+    "id": "step_04",
+    "index": "04",
+    "title": "MFA Wizard - Token Verification",
+    "description": "Step 2 of MFA onboarding. Prompts the user to verify clock sync by inputting the active 6-digit TOTP verification code.",
+    "screenshot": "04_signup_mfa_step2.png",
+    "status": "pass",
+    "assertions": [
+      "Step 2 verification token prompt is visible",
+      "Step indicator dots highlight Step 2",
+      "Input code entry box renders correctly with back/complete button layout"
+    ]
+  },
+  {
+    "id": "step_05",
+    "index": "05",
+    "title": "MFA Wizard - Backup Recovery Keys",
+    "description": "Step 3 of MFA onboarding. Highlights success pairing and presents a list of critical backup recovery keys to secure.",
+    "screenshot": "05_signup_mfa_step3.png",
+    "status": "pass",
+    "assertions": [
+      "Step 3 backup keys listing is rendered upon token verification",
+      "Secure warning card cautioning user about recovery is visible",
+      "Establish Session finalize button is fully operational"
+    ]
+  },
+  {
+    "id": "step_06",
+    "index": "06",
+    "title": "SignIn Form",
+    "description": "Google-styled SignIn container toggled from logged out landing page actions, requesting Business credentials.",
+    "screenshot": "06_login_form.png",
+    "status": "pass",
+    "assertions": [
+      "SignIn login card renders properly",
+      "Password and Business email input fields exist",
+      "Don't have an account create links are operational"
+    ]
+  },
+  {
+    "id": "step_07",
+    "index": "07",
+    "title": "SignIn MFA Code Verification",
+    "description": "Step-up Multi-Factor Authentication challenge prompted immediately upon password confirmation.",
+    "screenshot": "07_login_mfa_verification.png",
+    "status": "pass",
+    "assertions": [
+      "MFA verification challenge input renders",
+      "Clock sync check error warning is standby hidden",
+      "Verification back/verify actions are responsive"
+    ]
+  },
+  {
+    "id": "step_08",
+    "index": "08",
+    "title": "Authenticated Dashboard",
+    "description": "Main authenticated surface showcasing all 4 business modules unlocked under the Max Plan subscription.",
+    "screenshot": "08_dashboard_main.png",
+    "status": "pass",
+    "assertions": [
+      "Welcome back home user greeting banner renders",
+      "All four B2B SaaS platform tiles are unlocked (badge labels show UNLOCKED)",
+      "Post-login headers (Header Navigation link bar, collaboration toggle, and profile avatar) are fully visible"
+    ]
+  },
+  {
+    "id": "step_09",
+    "index": "09",
+    "title": "Market Radar Workspace",
+    "description": "Interactive operating workspace containing equity lanes, capability definitions, and structural AI feature panels.",
+    "screenshot": "09_product_command_radar.png",
+    "status": "pass",
+    "assertions": [
+      "Crumb highlights current product: 'Equity Screener & Market Radar'",
+      "The Active Lane dashboard, active title Stock Screener SaaS, and meta-audiences info panels are active",
+      "AI Feature panel details inputs, outputs, endpoints, and launch readiness logs"
+    ]
+  },
+  {
+    "id": "step_10",
+    "index": "10",
+    "title": "Ask Cerebral - Financial QA Search",
+    "description": "The RAG overlay and AI search answer console populated with interactive citations, data room references, and latency metrics.",
+    "screenshot": "10_ask_cerebral_query.png",
+    "status": "pass",
+    "assertions": [
+      "Ask Cerebral answer state updates to 'answer_ready'",
+      "AI reply block describes cited tables, evidence list, and freshness dates",
+      "Citations counters, latest source dates, and data room certificates are checked and displayed"
+    ]
+  },
+  {
+    "id": "step_11",
+    "index": "11",
+    "title": "Ask Cerebral - Agent Playground Directive",
+    "description": "Lower portion of the Ask Cerebral QA console showing the detailed cited source document context cards and copyable JSON Agent Directive.",
+    "screenshot": "11_ask_cerebral_directive.png",
+    "status": "pass",
+    "assertions": [
+      "Sources documents citation cards are populated and clickable",
+      "Agent directive pre console prints full formatted JSON configuration",
+      "Copy directive and Use as brief controls are fully responsive"
+    ]
+  },
+  {
+    "id": "step_12",
+    "index": "12",
+    "title": "Buyer Room Workspace",
+    "description": "Interactive coordinate surface providing sales outreach email drafts, checklists, scoring cards, and pilot activation packages.",
+    "screenshot": "12_product_buyer_room.png",
+    "status": "pass",
+    "assertions": [
+      "Crumb highlights current product: 'Deal Readiness & Buyer Room'",
+      "Step workflow panel renders executive summaries, buyer metadata, and pricing checkpoints",
+      "Checklist gates, Objections matrix, and next actions instructions are visible"
+    ]
+  },
+  {
+    "id": "step_13",
+    "index": "13",
+    "title": "Trust Registry Workspace",
+    "description": "Compliance operating monitor displaying data freshness trust scorecards, action queues, and cryptographic data-room certificate details.",
+    "screenshot": "13_product_trust_registry.png",
+    "status": "pass",
+    "assertions": [
+      "Crumb highlights current product: 'Corporate Governance & Freshness Trust'",
+      "Action Queue and pipeline execution timeline cards are active",
+      "Freshness coverage grids and cryptographic security metadata are detailed"
+    ]
+  },
+  {
+    "id": "step_14",
+    "index": "14",
+    "title": "Agent Workspace Playground",
+    "description": "Developer operating view enabling customized JSON agent manifest packaging, local llm node diagnostics, and playground logs.",
+    "screenshot": "14_product_agent_runtime.png",
+    "status": "pass",
+    "assertions": [
+      "Crumb highlights current product: 'Agentic Workspace & API Playground'",
+      "JSON editor showing copyable agent configuration manifest",
+      "Local LLM runtime nodes (llama.cpp) status list is rendered"
+    ]
+  },
+  {
+    "id": "step_15",
+    "index": "15",
+    "title": "Profile Billing Plans Drawer",
+    "description": "Account drawer upgrade panel displaying region-locked (USD / Stripe) SaaS subscription options (Pro / Max) dynamically priced.",
+    "screenshot": "15_profile_dropdown_billing.png",
+    "status": "pass",
+    "assertions": [
+      "Profile dropdown menu pops out cleanly from the avatar anchor",
+      "Region label correctly identifies region parameters (USD / Stripe)",
+      "Upgrade plans Pro and Max feature cards are populated with active states"
+    ]
+  },
+  {
+    "id": "step_16",
+    "index": "16",
+    "title": "Support Ticket Form",
+    "description": "Submit ticket panel inside the profile dropdown. Displays visual confirmation state immediately upon form completion.",
+    "screenshot": "16_profile_dropdown_support.png",
+    "status": "pass",
+    "assertions": [
+      "Support Ticket input fields support rich descriptions",
+      "Verification ticketSuccessMsg renders in green styling",
+      "Visual confirmation disappears cleanly in timeout loops"
+    ]
+  }
+];
+
+    let activeStepId = stepsData[0].id;
+
+    function selectStep(stepId) {
+      // Update sidebar buttons
+      document.querySelectorAll('.step-item').forEach(item => {
+        item.classList.toggle('active', item.getAttribute('data-id') === stepId);
+      });
+
+      const step = stepsData.find(s => s.id === stepId);
+      if (!step) return;
+
+      activeStepId = stepId;
+
+      // Update UI elements
+      document.getElementById('step-number-label').textContent = `Step ${step.index}`;
+      document.getElementById('step-title-display').textContent = step.title;
+      
+      const statusPill = document.getElementById('step-status-pill');
+      statusPill.textContent = step.status.toUpperCase();
+      statusPill.className = `status-pill ${step.status}`;
+
+      document.getElementById('step-description-display').textContent = step.description;
+
+      // Update assertions list
+      const list = document.getElementById('step-assertions-list');
+      list.innerHTML = '';
+      step.assertions.forEach(assertion => {
+        const li = document.createElement('li');
+        li.className = 'assertion-item';
+        li.textContent = assertion;
+        list.appendChild(li);
+      });
+
+      // Update screenshot
+      const img = document.getElementById('step-screenshot-display');
+      img.src = `./screenshots/${step.screenshot}`;
+      img.alt = `${step.title} Screenshot`;
+
+      const downloadLink = document.getElementById('step-download-link');
+      downloadLink.href = `./screenshots/${step.screenshot}`;
+      downloadLink.download = step.screenshot;
+    }
+
+    function openLightbox(src) {
+      const box = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      box.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    // Keyboard navigation (left/right arrow keys)
+    document.addEventListener('keydown', (e) => {
+      const currentIndex = stepsData.findIndex(s => s.id === activeStepId);
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        const prevIndex = (currentIndex - 1 + stepsData.length) % stepsData.length;
+        selectStep(stepsData[prevIndex].id);
+      } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        const nextIndex = (currentIndex + 1) % stepsData.length;
+        selectStep(stepsData[nextIndex].id);
+      } else if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    // Auto-select first step on boot
+    selectStep(activeStepId);
+  </script>
+</body>
+</html>

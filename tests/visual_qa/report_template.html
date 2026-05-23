@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerebral Insights - Visual QA Automation Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090b10;
+      --surface: rgba(22, 28, 45, 0.4);
+      --surface-border: rgba(255, 255, 255, 0.08);
+      --surface-active: rgba(22, 28, 45, 0.8);
+      --primary: #1a73e8;
+      --primary-glow: rgba(26, 115, 232, 0.35);
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --green: #10b981;
+      --green-glow: rgba(16, 185, 129, 0.2);
+      --red: #ef4444;
+      --red-glow: rgba(239, 68, 68, 0.2);
+      --yellow: #f59e0b;
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(26, 115, 232, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      padding: 32px;
+      line-height: 1.5;
+    }
+
+    header {
+      max-width: 1400px;
+      margin: 0 auto 32px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--surface-border);
+      padding-bottom: 24px;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-badge {
+      background: linear-gradient(135deg, var(--primary), var(--green));
+      color: #fff;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.5rem;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px var(--primary-glow);
+    }
+
+    .brand-titles h1 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-titles p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .meta-summary {
+      display: flex;
+      gap: 24px;
+    }
+
+    .meta-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      padding: 12px 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(12px);
+      text-align: right;
+    }
+
+    .meta-card span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .meta-card strong {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: #fff;
+    }
+
+    .main-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    /* Left Sidebar - Step Navigation List */
+    .sidebar {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(16px);
+      max-height: 80vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar h2 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid transparent;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+
+    .step-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .step-item.active {
+      background: var(--surface-active);
+      border-color: var(--primary);
+      box-shadow: 0 0 12px var(--primary-glow);
+    }
+
+    .step-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .step-badge.pass {
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green-glow);
+    }
+
+    .step-badge.fail {
+      background: var(--red);
+      box-shadow: 0 0 8px var(--red-glow);
+    }
+
+    .step-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .step-info strong {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #fff;
+    }
+
+    .step-info span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Right Main Panel - Screenshot Inspection & Details */
+    .content-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .details-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .details-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--surface-border);
+      padding-bottom: 16px;
+    }
+
+    .details-title h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .details-title span {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .status-pill {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 100px;
+      letter-spacing: 0.05em;
+    }
+
+    .status-pill.pass {
+      background: var(--green-glow);
+      color: var(--green);
+      border: 1px solid var(--green);
+    }
+
+    .status-pill.fail {
+      background: var(--red-glow);
+      color: var(--red);
+      border: 1px solid var(--red);
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+
+    .details-block h4 {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .details-block p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .assertions-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .assertion-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .assertion-item::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: bold;
+    }
+
+    .assertion-item.fail::before {
+      content: "✗";
+      color: var(--red);
+    }
+
+    .screenshot-viewer {
+      background: #0d1117;
+      border: 1px solid var(--surface-border);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    .screenshot-viewer img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.05);
+      cursor: zoom-in;
+      transition: transform 0.2s ease;
+    }
+
+    .viewer-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 8px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .viewer-footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .viewer-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lightbox Overlay */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(4, 6, 10, 0.95);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 40px;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 12px 64px rgba(0,0,0,0.8);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: #fff;
+      font-size: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: all 0.2s ease;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: #fff;
+    }
+
+    /* Custom Scrollbar for premium feeling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-section">
+      <div class="logo-badge">CI</div>
+      <div class="brand-titles">
+        <h1>Visual QA Automation Report</h1>
+        <p>Harnessed E2E Test Suite & Screenshot Catalog for Cerebral Insights</p>
+      </div>
+    </div>
+    <div class="meta-summary">
+      <div class="meta-card">
+        <span>Execution Status</span>
+        <strong style="color: var(--green);">{{RUN_STATUS}}</strong>
+      </div>
+      <div class="meta-card">
+        <span>Total Steps</span>
+        <strong>{{TOTAL_STEPS}} Passed</strong>
+      </div>
+      <div class="meta-card">
+        <span>Timestamp</span>
+        <strong style="font-size: 0.85rem; font-family: var(--font-mono);">{{RUN_TIMESTAMP}}</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Steps Navigation Sidebar -->
+    <aside class="sidebar" aria-label="Verification Steps">
+      <h2>Interactive Steps</h2>
+      {{STEPS_NAVIGATION}}
+    </aside>
+
+    <!-- Interactive Step Panel -->
+    <section class="content-panel" aria-label="Step Inspection Dashboard">
+      <div class="details-card">
+        <div class="details-header">
+          <div class="details-title">
+            <span id="step-number-label">Step 01</span>
+            <h3 id="step-title-display">Landing Page</h3>
+          </div>
+          <span class="status-pill pass" id="step-status-pill">PASSED</span>
+        </div>
+
+        <div class="details-grid">
+          <div class="details-block">
+            <h4>Interaction & Verification Details</h4>
+            <p id="step-description-display">
+              Initial load of the website, showcasing the dynamic SaaS landing page containing the main hero section, product offerings, and starter pricing packages.
+            </p>
+          </div>
+          <div class="details-block">
+            <h4>Assertions Passed</h4>
+            <ul class="assertions-list" id="step-assertions-list">
+              <li class="assertion-item">Landing view section is visible</li>
+              <li class="assertion-item">Header branding brand-info contains "Cerebral Insights"</li>
+              <li class="assertion-item">Marketing pricing grid cards are rendered</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot-viewer">
+        <img id="step-screenshot-display" src="./screenshots/01_landing_page.png" alt="Landing Page Screenshot" onclick="openLightbox(this.src)">
+        <div class="viewer-footer">
+          <span>Viewport: 1280x800 px (Chromium)</span>
+          <a id="step-download-link" href="./screenshots/01_landing_page.png" download>Download High-Res PNG</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img id="lightbox-img" src="" alt="Full Screen Screenshot">
+  </div>
+
+  <script>
+    // Injected Step Database
+    const stepsData = {{STEPS_JSON}};
+
+    let activeStepId = stepsData[0].id;
+
+    function selectStep(stepId) {
+      // Update sidebar buttons
+      document.querySelectorAll('.step-item').forEach(item => {
+        item.classList.toggle('active', item.getAttribute('data-id') === stepId);
+      });
+
+      const step = stepsData.find(s => s.id === stepId);
+      if (!step) return;
+
+      activeStepId = stepId;
+
+      // Update UI elements
+      document.getElementById('step-number-label').textContent = `Step ${step.index}`;
+      document.getElementById('step-title-display').textContent = step.title;
+      
+      const statusPill = document.getElementById('step-status-pill');
+      statusPill.textContent = step.status.toUpperCase();
+      statusPill.className = `status-pill ${step.status}`;
+
+      document.getElementById('step-description-display').textContent = step.description;
+
+      // Update assertions list
+      const list = document.getElementById('step-assertions-list');
+      list.innerHTML = '';
+      step.assertions.forEach(assertion => {
+        const li = document.createElement('li');
+        li.className = 'assertion-item';
+        li.textContent = assertion;
+        list.appendChild(li);
+      });
+
+      // Update screenshot
+      const img = document.getElementById('step-screenshot-display');
+      img.src = `./screenshots/${step.screenshot}`;
+      img.alt = `${step.title} Screenshot`;
+
+      const downloadLink = document.getElementById('step-download-link');
+      downloadLink.href = `./screenshots/${step.screenshot}`;
+      downloadLink.download = step.screenshot;
+    }
+
+    function openLightbox(src) {
+      const box = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = src;
+      box.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    // Keyboard navigation (left/right arrow keys)
+    document.addEventListener('keydown', (e) => {
+      const currentIndex = stepsData.findIndex(s => s.id === activeStepId);
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        const prevIndex = (currentIndex - 1 + stepsData.length) % stepsData.length;
+        selectStep(stepsData[prevIndex].id);
+      } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        const nextIndex = (currentIndex + 1) % stepsData.length;
+        selectStep(stepsData[nextIndex].id);
+      } else if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    // Auto-select first step on boot
+    selectStep(activeStepId);
+  </script>
+</body>
+</html>
