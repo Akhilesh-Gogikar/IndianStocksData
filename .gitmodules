@@ -1,0 +1,3 @@
+[submodule "cerebral-insights-platform"]
+	path = cerebral-insights-platform
+	url = NewBlogProject-Server:/srv/git/cerebral-insights-platform.git

@@ -17,7 +17,8 @@ from system.api.factory import create_app, list_profiles
 
 
 DEFAULT_DB_PATH = Path("./system/market_intel.db").resolve()
-app = create_app(DEFAULT_DB_PATH, profile_name="full")
+DEFAULT_VECTOR_INDEX_DIR = Path("./local_repository/vector_indexes").resolve()
+app = create_app(DEFAULT_DB_PATH, profile_name="full", vector_index_dir=DEFAULT_VECTOR_INDEX_DIR)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -25,6 +26,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--db-path", default=str(DEFAULT_DB_PATH))
     parser.add_argument("--host", default="0.0.0.0")
     parser.add_argument("--port", type=int, default=8000)
+    parser.add_argument(
+        "--vector-index-dir",
+        default=str(DEFAULT_VECTOR_INDEX_DIR),
+        help="Local directory for TurboVec index files.",
+    )
     parser.add_argument(
         "--profile",
         default="full",
@@ -48,7 +54,11 @@ def main() -> None:
             print(profile_name)
         return
 
-    runtime_app = create_app(Path(args.db_path).resolve(), profile_name=args.profile)
+    runtime_app = create_app(
+        Path(args.db_path).resolve(),
+        profile_name=args.profile,
+        vector_index_dir=Path(args.vector_index_dir).resolve(),
+    )
 
     import uvicorn
 

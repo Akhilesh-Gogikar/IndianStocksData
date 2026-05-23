@@ -6,7 +6,8 @@ from pathlib import Path
 from fastapi import APIRouter, FastAPI
 
 from .database import DatabaseConfig
-from .routers import agents, capabilities, discovery, documents, health, runs
+from .routers import agents, capabilities, discovery, documents, freshness, health, market, portfolios, runs, screeners, vectors, watchlists
+from .security import configure_security
 
 
 @dataclass(frozen=True)
@@ -22,19 +23,55 @@ PROFILE_REGISTRY: dict[str, ApiProfile] = {
         name="full",
         title="Indian Stocks Data Platform API",
         description="Unified market-data, retrieval, and agent endpoints.",
-        routers=(health.router, capabilities.router, discovery.router, runs.router, documents.router, agents.router),
+        routers=(
+            health.router,
+            capabilities.router,
+            discovery.router,
+            runs.router,
+            freshness.router,
+            market.router,
+            screeners.router,
+            watchlists.router,
+            portfolios.router,
+            documents.router,
+            vectors.router,
+            agents.router,
+        ),
     ),
     "market-data": ApiProfile(
         name="market-data",
         title="Indian Stocks Market Data API",
-        description="Lean API focused on run status and historical/current documents.",
-        routers=(health.router, capabilities.router, discovery.router, runs.router, documents.router),
+        description="Lean API focused on canonical market data, run status, and source documents.",
+        routers=(
+            health.router,
+            capabilities.router,
+            discovery.router,
+            runs.router,
+            freshness.router,
+            market.router,
+            screeners.router,
+            watchlists.router,
+            portfolios.router,
+            documents.router,
+        ),
     ),
     "agent-runtime": ApiProfile(
         name="agent-runtime",
         title="Indian Stocks Agent Runtime API",
         description="Agent-facing API with discovery, context, and orchestration guidance.",
-        routers=(health.router, capabilities.router, discovery.router, runs.router, agents.router),
+        routers=(
+            health.router,
+            capabilities.router,
+            discovery.router,
+            runs.router,
+            freshness.router,
+            market.router,
+            screeners.router,
+            watchlists.router,
+            portfolios.router,
+            vectors.router,
+            agents.router,
+        ),
     ),
 }
 
@@ -44,7 +81,11 @@ def list_profiles() -> list[str]:
 
 
 
-def create_app(db_path: Path, profile_name: str = "full") -> FastAPI:
+def create_app(
+    db_path: Path,
+    profile_name: str = "full",
+    vector_index_dir: Path | None = None,
+) -> FastAPI:
     if profile_name not in PROFILE_REGISTRY:
         supported = ", ".join(list_profiles())
         raise ValueError(f"Unsupported profile '{profile_name}'. Expected one of: {supported}")
@@ -52,12 +93,14 @@ def create_app(db_path: Path, profile_name: str = "full") -> FastAPI:
     profile = PROFILE_REGISTRY[profile_name]
     app = FastAPI(title=profile.title, version="2.0.0", description=profile.description)
     app.state.database = DatabaseConfig(db_path)
+    app.state.vector_index_dir = vector_index_dir or Path("./local_repository/vector_indexes").resolve()
     app.state.profile = {
         "name": profile.name,
         "title": profile.title,
         "description": profile.description,
         "router_names": [router.tags[0] if router.tags else "untagged" for router in profile.routers],
     }
+    app.state.security = configure_security(app).public_metadata()
 
     for router in profile.routers:
         app.include_router(router)
