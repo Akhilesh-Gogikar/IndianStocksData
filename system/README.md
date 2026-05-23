@@ -153,6 +153,7 @@ An AI-native surface focused on orchestration and tool discovery:
 - `GET /agents/ai-improvement-launch-customer-communication-delivery-send-authorization-unblock-verification-report`
 - `GET /agents/ai-improvement-launch-customer-communication-delivery-send-readiness-packet`
 - `GET /agents/ai-improvement-launch-customer-communication-delivery-send-readiness-review-packet`
+- `GET /agents/ai-improvement-launch-customer-communication-delivery-send-execution-handoff-packet`
 - `GET /agents/customer-intent-action-plan`
 - `GET /agents/customer-intent-followup-packet`
 - `GET /agents/customer-intent-followup-review`
@@ -283,6 +284,7 @@ An AI-native surface focused on orchestration and tool discovery:
 - **AI improvement launch customer communication delivery send authorization unblock verification report:** `/agents/ai-improvement-launch-customer-communication-delivery-send-authorization-unblock-verification-report` checks authorization gates, exit criteria, unblock tasks, failed checks, required follow-up, risk, and next action.
 - **AI improvement launch customer communication delivery send readiness packet:** `/agents/ai-improvement-launch-customer-communication-delivery-send-readiness-packet` packages send gate, customer claim status, blockers, advisor review, risk, and immediate action.
 - **AI improvement launch customer communication delivery send readiness review packet:** `/agents/ai-improvement-launch-customer-communication-delivery-send-readiness-review-packet` decides send or hold with approvals, blockers, approved payload, and advisor next action.
+- **AI improvement launch customer communication delivery send execution handoff packet:** `/agents/ai-improvement-launch-customer-communication-delivery-send-execution-handoff-packet` converts send review into operator-safe handoff status, execution gate, payload, audit trail, blockers, and immediate action.
 - **Customer intent action plan:** `/agents/customer-intent-action-plan` turns ranked intent into an evidence-backed advisor worklist.
 - **Customer intent follow-up packets:** `/agents/customer-intent-followup-packet` converts the top intent action into compliant execution scaffolding.
 - **Customer intent follow-up review:** `/agents/customer-intent-followup-review` preflights packet copy, evidence, review gates, and guardrails.

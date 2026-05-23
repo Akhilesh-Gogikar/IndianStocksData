@@ -743,6 +743,13 @@ def agent_manifest(request: Request) -> dict[str, Any]:
         },
         {
             "router": "agents",
+            "name": "agents.ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet",
+            "method": "GET",
+            "path": "/agents/ai-improvement-launch-customer-communication-delivery-send-execution-handoff-packet",
+            "description": "Convert send readiness review into operator-safe handoff status, execution gate, payload, audit trail, blockers, and immediate action.",
+        },
+        {
+            "router": "agents",
             "name": "agents.customer_intent_action_plan",
             "method": "GET",
             "path": "/agents/customer-intent-action-plan",

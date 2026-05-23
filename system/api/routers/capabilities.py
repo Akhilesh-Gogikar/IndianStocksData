@@ -163,6 +163,7 @@ def capabilities(request: Request) -> dict[str, object]:
             "AI improvement launch customer communication delivery send authorization unblock verification reports check authorization gates, exit criteria, unblock tasks, failed checks, required follow-up, risk, and next action.",
             "AI improvement launch customer communication delivery send readiness packets package send gate, customer claim status, blockers, advisor review, risk, and immediate action.",
             "AI improvement launch customer communication delivery send readiness review packets decide send or hold with approvals, blockers, approved payload, and advisor next action.",
+            "AI improvement launch customer communication delivery send execution handoff packets convert send review into operator-safe handoff status, execution gate, payload, audit trail, blockers, and immediate action.",
             "Customer intent action plans turn ranked intent into evidence-backed advisor worklists.",
             "Customer intent follow-up packets convert top actions into compliant execution scaffolds.",
             "Customer intent follow-up reviews preflight packet copy, evidence, review gates, and guardrails.",

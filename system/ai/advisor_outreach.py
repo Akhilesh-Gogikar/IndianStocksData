@@ -2339,6 +2339,51 @@ def build_ai_improvement_launch_customer_communication_delivery_send_readiness_r
     return packet
 
 
+def build_ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet(
+    conn: sqlite3.Connection,
+    owner_id: str | None = None,
+    improvement_id: str | None = None,
+    limit: int = 10,
+) -> dict[str, Any]:
+    review = build_ai_improvement_launch_customer_communication_delivery_send_readiness_review_packet(
+        conn,
+        owner_id,
+        improvement_id=improvement_id,
+        limit=limit,
+    )
+    handoff = {
+        "kind": "ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet",
+        "owner_id": review["owner_id"],
+        "generated_at": now_utc(),
+        "experiment_id": review["experiment_id"],
+        "handoff_status": _ai_launch_customer_communication_delivery_send_execution_handoff_status(review),
+        "risk_level": review["risk_level"],
+        "work_item": review["work_item"],
+        "send_decision": review["send_decision"],
+        "execution_gate": _ai_launch_customer_communication_delivery_send_execution_handoff_gate(review),
+        "operator_instructions": _ai_launch_customer_communication_delivery_send_execution_handoff_instructions(
+            review
+        ),
+        "payload": review["approved_payload"],
+        "send_blockers": review["send_blockers"],
+        "audit_trail": _ai_launch_customer_communication_delivery_send_execution_handoff_audit_trail(review),
+        "immediate_action": review["advisor_next_action"],
+        "source_review_status": review["review_status"],
+        "source_readiness_status": review["source_readiness_status"],
+        "source_send_gate": review["source_send_gate"],
+        "source_verification_status": review["source_verification_status"],
+        "source_authorization_status": review["source_authorization_status"],
+        "source_authorization_decision": review["source_authorization_decision"],
+        "source_delivery_status": review["source_delivery_status"],
+        "source_customer_claim_status": review["source_customer_claim_status"],
+        "source_launch_decision": review["source_launch_decision"],
+    }
+    handoff["handoff_markdown"] = (
+        _ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet_markdown(handoff)
+    )
+    return handoff
+
+
 def require_outreach_draft_table(conn: sqlite3.Connection) -> None:
     if not table_exists(conn, "advisor_outreach_drafts"):
         raise MarketDataUnavailable("Advisor outreach draft table 'advisor_outreach_drafts' is not available")
@@ -8500,6 +8545,95 @@ def _ai_improvement_launch_customer_communication_delivery_send_readiness_review
     if packet["send_blockers"]:
         lines.extend(
             f"- {item['blocker']} ({item['severity']}): {item['resolution']}" for item in packet["send_blockers"]
+        )
+    else:
+        lines.append("- None")
+    return "\n".join(lines)
+
+
+def _ai_launch_customer_communication_delivery_send_execution_handoff_status(
+    review: dict[str, Any],
+) -> str:
+    if review["send_decision"]["decision"] == "send_after_advisor_review":
+        return "ready_for_operator_handoff"
+    if review["send_decision"]["decision"] == "do_not_send":
+        return "withheld"
+    return "needs_review"
+
+
+def _ai_launch_customer_communication_delivery_send_execution_handoff_gate(
+    review: dict[str, Any],
+) -> dict[str, Any]:
+    if review["send_decision"]["decision"] != "send_after_advisor_review":
+        return {
+            "status": "blocked",
+            "decision": "do_not_send",
+            "blocked_count": len(review["send_blockers"]),
+            "detail": review["send_decision"]["rationale"],
+        }
+    return {
+        "status": "ready",
+        "decision": "handoff_to_operator",
+        "blocked_count": 0,
+        "detail": "Advisor-reviewed send is ready for operator handoff.",
+    }
+
+
+def _ai_launch_customer_communication_delivery_send_execution_handoff_instructions(
+    review: dict[str, Any],
+) -> dict[str, Any]:
+    if review["send_decision"]["decision"] != "send_after_advisor_review":
+        return {
+            "owner": review["advisor_next_action"].get("owner", "advisor"),
+            "action": review["advisor_next_action"]["action"],
+            "channel": "withheld",
+            "detail": "Do not send customer communication until review blockers clear.",
+        }
+    return {
+        "owner": "advisor",
+        "action": "send_customer_communication",
+        "channel": "advisor_reviewed_outreach",
+        "detail": "Send the approved payload through the reviewed advisor channel.",
+    }
+
+
+def _ai_launch_customer_communication_delivery_send_execution_handoff_audit_trail(
+    review: dict[str, Any],
+) -> list[dict[str, str]]:
+    return [
+        {
+            "event": "readiness_review",
+            "status": review["review_status"],
+            "detail": review["send_decision"]["rationale"],
+        },
+        {
+            "event": "send_authorization",
+            "status": review["source_authorization_status"],
+            "detail": review["source_authorization_decision"]["rationale"],
+        },
+        {
+            "event": "payload",
+            "status": review["approved_payload"]["status"],
+            "detail": review["approved_payload"]["detail"],
+        },
+    ]
+
+
+def _ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet_markdown(
+    handoff: dict[str, Any],
+) -> str:
+    lines = [
+        "# AI Improvement Launch Customer Communication Delivery Send Execution Handoff Packet",
+        f"- Experiment: {handoff['experiment_id']}",
+        f"- Handoff status: {handoff['handoff_status']}",
+        f"- Execution decision: {handoff['execution_gate']['decision']}",
+        f"- Immediate action: {handoff['immediate_action']['action']}",
+        "",
+        "## Send Blockers",
+    ]
+    if handoff["send_blockers"]:
+        lines.extend(
+            f"- {item['blocker']} ({item['severity']}): {item['resolution']}" for item in handoff["send_blockers"]
         )
     else:
         lines.append("- None")

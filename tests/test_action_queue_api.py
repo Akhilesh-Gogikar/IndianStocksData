@@ -4568,6 +4568,73 @@ class ActionQueueApiTests(unittest.TestCase):
             body["review_markdown"],
         )
 
+    def test_ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet_withholds_blocked_send(
+        self,
+    ) -> None:
+        self.create_customer_portfolio()
+        self.client.post("/agents/action-queue?owner_id=customer-a&focus=telecom&evidence_limit=1&save=true")
+        generated = self.client.post("/agents/advisor-outreach-draft?owner_id=customer-a&save=true").json()
+        draft_id = generated["saved_draft_id"]
+        self.client.patch(
+            f"/agents/advisor-outreach-drafts/{draft_id}?owner_id=customer-a",
+            json={"status": "approved", "review_notes": "Approved for delivery.", "reviewer": "advisor-a"},
+        )
+        packet = self.client.post(
+            f"/agents/advisor-outreach-drafts/{draft_id}/delivery-packet?owner_id=customer-a&save=true"
+        )
+        delivery_id = packet.json()["saved_delivery_id"]
+        self.client.patch(
+            f"/agents/advisor-outreach-deliveries/{delivery_id}?owner_id=customer-a",
+            json={"status": "delivered", "delivery_notes": "Shared during review call.", "delivered_by": "advisor-a"},
+        )
+        self.client.post(
+            f"/agents/advisor-outreach-deliveries/{delivery_id}/outcome?owner_id=customer-a",
+            json={
+                "response_text": "Customer is interested and asked to schedule a meeting next week.",
+                "follow_up_due_at": "2026-05-29T15:00:00Z",
+                "recorded_by": "advisor-a",
+            },
+        )
+
+        response = self.client.get(
+            "/agents/ai-improvement-launch-customer-communication-delivery-send-execution-handoff-packet?owner_id=customer-a"
+        )
+
+        self.assertEqual(response.status_code, 200)
+        body = response.json()
+        self.assertEqual(
+            body["kind"],
+            "ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet",
+        )
+        self.assertEqual(body["experiment_id"], "experiment:scale_top_pattern")
+        self.assertEqual(body["handoff_status"], "withheld")
+        self.assertEqual(body["risk_level"], "high")
+        self.assertEqual(body["work_item"]["work_item_id"], "backlog:clear_scale_blocker")
+        self.assertEqual(body["send_decision"]["decision"], "do_not_send")
+        self.assertEqual(body["execution_gate"]["status"], "blocked")
+        self.assertEqual(body["execution_gate"]["decision"], "do_not_send")
+        self.assertEqual(body["operator_instructions"]["action"], "clear_send_authorization_hold")
+        self.assertEqual(body["operator_instructions"]["channel"], "withheld")
+        self.assertEqual(body["payload"]["status"], "withheld")
+        self.assertFalse(body["payload"]["customer_facing"])
+        self.assertTrue(any(item["blocker"] == "send_not_authorized" for item in body["send_blockers"]))
+        self.assertEqual(body["audit_trail"][0]["event"], "readiness_review")
+        self.assertEqual(body["audit_trail"][1]["event"], "send_authorization")
+        self.assertEqual(body["immediate_action"]["action"], "clear_send_authorization_hold")
+        self.assertEqual(body["source_review_status"], "hold_send")
+        self.assertEqual(body["source_readiness_status"], "not_ready")
+        self.assertEqual(body["source_send_gate"]["decision"], "do_not_send")
+        self.assertEqual(body["source_verification_status"], "failed")
+        self.assertEqual(body["source_authorization_status"], "hold_send")
+        self.assertEqual(body["source_authorization_decision"]["decision"], "do_not_send")
+        self.assertEqual(body["source_delivery_status"], "withheld")
+        self.assertEqual(body["source_customer_claim_status"], "not_claimable")
+        self.assertEqual(body["source_launch_decision"]["status"], "hold_launch")
+        self.assertIn(
+            "AI Improvement Launch Customer Communication Delivery Send Execution Handoff Packet",
+            body["handoff_markdown"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

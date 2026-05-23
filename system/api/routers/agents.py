@@ -88,6 +88,7 @@ from system.ai.advisor_outreach import (
     build_ai_improvement_launch_customer_communication_delivery_send_authorization_monitor,
     build_ai_improvement_launch_customer_communication_delivery_send_authorization_unblock_plan,
     build_ai_improvement_launch_customer_communication_delivery_send_authorization_unblock_verification_report,
+    build_ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet,
     build_ai_improvement_launch_customer_communication_delivery_send_readiness_packet,
     build_ai_improvement_launch_customer_communication_delivery_send_readiness_review_packet,
     build_ai_recommendation_effectiveness_dashboard,
@@ -1353,6 +1354,26 @@ def agent_ai_improvement_launch_customer_communication_delivery_send_readiness_r
 ) -> dict[str, Any]:
     try:
         return build_ai_improvement_launch_customer_communication_delivery_send_readiness_review_packet(
+            conn,
+            owner_id,
+            improvement_id=improvement_id,
+            limit=limit,
+        )
+    except MarketDataUnavailable as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except MarketRecordNotFound as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@router.get("/ai-improvement-launch-customer-communication-delivery-send-execution-handoff-packet")
+def agent_ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet(
+    owner_id: str | None = Query(default=None),
+    improvement_id: str | None = Query(default=None),
+    limit: int = Query(default=10, ge=1, le=50),
+    conn: sqlite3.Connection = Depends(get_connection),
+) -> dict[str, Any]:
+    try:
+        return build_ai_improvement_launch_customer_communication_delivery_send_execution_handoff_packet(
             conn,
             owner_id,
             improvement_id=improvement_id,
