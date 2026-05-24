@@ -24,6 +24,13 @@ def capabilities(request: Request) -> dict[str, object]:
         "watchlists_ready": watchlists_ready,
         "portfolios_ready": portfolios_ready,
         "vector_search_ready": vector_search_ready,
+        "local_llm_fallback": {
+            "provider": "local-llama",
+            "status_endpoint": "GET /agents/local-llm-status",
+            "chat_endpoint": "POST /agents/local-llm-chat",
+            "default_base_url": "http://127.0.0.1:8080/v1",
+            "raw_data_boundary": "Uses processed LLM-friendly payload context only.",
+        },
         "canonical_market_routes": [
             "GET /companies/{ticker}",
             "GET /quotes/{ticker}",
@@ -97,6 +104,7 @@ def capabilities(request: Request) -> dict[str, object]:
             "Profiles are composable so one repository can publish multiple APIs.",
             "Canonical market routes return data plus freshness, quality, lineage, and rights metadata.",
             "Use the agent manifest and OpenAPI document for tool discovery.",
+            "Agentic product pages can use Firebase Gemini first and fall back to the local llama.cpp endpoints when cloud tokens are unavailable.",
             "Quality checks are first-class signals and should be consumed by agents.",
             "Vector search uses local SQLite embeddings and TurboVec when the optional package is installed.",
             "Research briefs convert local evidence into cited customer-facing AI insight payloads.",

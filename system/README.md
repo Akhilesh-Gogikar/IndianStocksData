@@ -97,6 +97,8 @@ An AI-native surface focused on orchestration and tool discovery:
 - `GET /freshness/{ticker}`
 - `GET /agents/context/{ticker}`
 - `GET /agents/workflow/{ticker}`
+- `GET /agents/local-llm-status`
+- `POST /agents/local-llm-chat`
 - `GET /agents/advisor-workbench`
 - `POST /agents/advisor-outreach-draft`
 - `GET /agents/advisor-outreach-drafts`
@@ -307,6 +309,16 @@ python system/service_api.py --db-path ./system/market_intel.db --profile agent-
 python system/webhook_worker.py --db-path ./system/market_intel.db
 python system/webhook_worker.py --db-path ./system/market_intel.db --endpoint-url https://example.com/webhook
 ```
+
+Local llama.cpp fallback is optional. Provide your own GGUF model path and start an OpenAI-compatible llama.cpp server locally:
+
+```bash
+./scripts/start_llama_cpp_server.sh /absolute/path/to/model.gguf 8080
+LLAMA_CPP_BASE_URL=http://127.0.0.1:8080/v1 LLAMA_CPP_MODEL=local-llama python system/service_api.py --db-path ./system/market_intel.db --profile agent-runtime
+```
+
+The fallback endpoints only receive prompts and processed LLM-friendly product context; raw upstream market data remains local.
+The static Cerebral Insights backend also exposes the browser-facing proxy paths `GET /api/agents/local-llm-status` and `POST /api/agents/local-llm-chat` for the product-page Firebase-to-local fallback.
 
 `make canonicalize` runs the Tickertape import command and populates the serving tables used by `/companies`, `/quotes`, `/ratios`, `/events`, `/peers`, and `/screen`.
 `POST /watchlists/webhooks/subscriptions` registers customer-specific destinations for alert notifications. Include `signing_secret` to have the worker send `X-Cerebral-Signature: t=<timestamp>,v1=<hmac-sha256>` over the exact JSON body. `PATCH /watchlists/webhooks/subscriptions/{subscription_id}` updates endpoint, enabled state, event type, or signing secret; `DELETE` disables a subscription while keeping history. `POST /watchlists/webhooks/subscriptions/{subscription_id}/test` queues a signed test event for endpoint verification. `GET /watchlists/webhooks/status` summarizes subscription health, pending delivery pressure, and recent delivery problems. `make deliver-webhooks` drains destination-specific `webhook_outbox` rows and marks them delivered, retryable, or failed. `POST /watchlists/webhooks/outbox/{outbox_id}/replay` requeues a failed or pending row for immediate redelivery after endpoint repair. `GET /watchlists/webhooks/deliveries` exposes the per-attempt audit trail for endpoint, HTTP status, error, duration, and retry state. `WEBHOOK_URL=https://example.com/webhook` remains available as a fallback for outbox rows without a stored destination.

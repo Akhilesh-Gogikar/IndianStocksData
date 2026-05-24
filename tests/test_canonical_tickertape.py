@@ -128,6 +128,38 @@ class CanonicalTickertapeImportTests(unittest.TestCase):
         self.assertEqual(screen["metadata"]["result_count"], 1)
         self.assertEqual(screen["data"][0]["company"]["ticker"], "RELIANCE")
 
+    def test_import_marks_partial_source_warning_without_failed_ticker_rows(self) -> None:
+        conn = sqlite3.connect(self.source_db)
+        conn.execute("UPDATE sync_runs SET status = 'completed_with_failures' WHERE id = 7")
+        conn.execute(
+            "INSERT INTO companies VALUES (?, ?, ?, ?, ?)",
+            ("missing-bank-MISS", "Missing Bank", "MISS", "INE000A01000", "/stocks/missing-bank-MISS"),
+        )
+        conn.commit()
+        conn.close()
+
+        counts = import_tickertape_canonical(
+            source_db=self.source_db,
+            target_db=self.target_db,
+            schema_path=Path("system/schema.sql"),
+        )
+
+        self.assertEqual(counts["quality_status"], "warning")
+        self.assertEqual(counts["companies"], 1)
+
+        target = sqlite3.connect(self.target_db)
+        target.row_factory = sqlite3.Row
+        try:
+            missing = target.execute("SELECT * FROM companies WHERE ticker = 'MISS'").fetchone()
+            audit = target.execute(
+                "SELECT status, details FROM data_quality_audits WHERE check_name = 'canonical_tickertape_import'"
+            ).fetchone()
+        finally:
+            target.close()
+
+        self.assertIsNone(missing)
+        self.assertEqual(audit["status"], "warning")
+
 
 if __name__ == "__main__":
     unittest.main()

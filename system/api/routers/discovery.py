@@ -1156,6 +1156,20 @@ def agent_manifest(request: Request) -> dict[str, Any]:
         },
         {
             "router": "agents",
+            "name": "agents.local_llm_status",
+            "method": "GET",
+            "path": "/agents/local-llm-status",
+            "description": "Check whether the local llama.cpp OpenAI-compatible fallback server is reachable.",
+        },
+        {
+            "router": "agents",
+            "name": "agents.local_llm_chat",
+            "method": "POST",
+            "path": "/agents/local-llm-chat",
+            "description": "Generate a non-advisory local fallback answer using processed product context only.",
+        },
+        {
+            "router": "agents",
             "name": "agents.workflow",
             "method": "GET",
             "path": "/agents/workflow/{ticker}",

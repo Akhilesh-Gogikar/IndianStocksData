@@ -1,6 +1,10 @@
 from __future__ import annotations
 
+import json
+import os
 import sqlite3
+import urllib.error
+import urllib.request
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request
@@ -136,6 +140,10 @@ from ..query_service import (
 
 router = APIRouter(prefix="/agents", tags=["agents"])
 
+DEFAULT_LLAMA_CPP_BASE_URL = "http://127.0.0.1:8080/v1"
+DEFAULT_LLAMA_CPP_MODEL = "local-llama"
+DEFAULT_LLAMA_CPP_TIMEOUT_SECONDS = 20
+
 
 class ActionQueueTaskUpdate(BaseModel):
     status: str | None = None
@@ -166,6 +174,15 @@ class ActionQueueEscalationReview(BaseModel):
     reviewer: str | None = None
     notes: str | None = None
     snoozed_until: str | None = None
+
+
+class LocalLlmChatRequest(BaseModel):
+    message: str | None = None
+    messages: list[dict[str, Any]] | None = None
+    product_id: str | None = None
+    context: dict[str, Any] | None = None
+    max_tokens: int | None = 512
+    temperature: float | None = 0.2
 
 
 class ActionQueueEscalationBulkReview(ActionQueueEscalationReview):
@@ -271,6 +288,125 @@ class OutreachDeliveryOutcomeCreate(BaseModel):
     response_text: str | None = None
     follow_up_due_at: str | None = None
     recorded_by: str | None = None
+
+
+def _llama_cpp_config() -> dict[str, Any]:
+    timeout_raw = os.getenv("LLAMA_CPP_TIMEOUT_SECONDS", str(DEFAULT_LLAMA_CPP_TIMEOUT_SECONDS))
+    try:
+        timeout = max(1.0, float(timeout_raw))
+    except ValueError:
+        timeout = float(DEFAULT_LLAMA_CPP_TIMEOUT_SECONDS)
+    return {
+        "base_url": os.getenv("LLAMA_CPP_BASE_URL", DEFAULT_LLAMA_CPP_BASE_URL).rstrip("/"),
+        "model": os.getenv("LLAMA_CPP_MODEL", DEFAULT_LLAMA_CPP_MODEL),
+        "timeout_seconds": timeout,
+    }
+
+
+def _request_llama_cpp_json(path: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
+    config = _llama_cpp_config()
+    data = json.dumps(payload).encode("utf-8") if payload is not None else None
+    request = urllib.request.Request(
+        f"{config['base_url']}/{path.lstrip('/')}",
+        data=data,
+        method="POST" if payload is not None else "GET",
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=config["timeout_seconds"]) as response:
+            raw = response.read().decode("utf-8")
+    except TimeoutError as exc:
+        raise HTTPException(status_code=504, detail="local_llm_timeout") from exc
+    except urllib.error.URLError as exc:
+        reason = getattr(exc, "reason", exc)
+        if isinstance(reason, TimeoutError):
+            raise HTTPException(status_code=504, detail="local_llm_timeout") from exc
+        raise HTTPException(status_code=503, detail="local_llm_unavailable") from exc
+    try:
+        return json.loads(raw or "{}")
+    except json.JSONDecodeError as exc:
+        raise HTTPException(status_code=502, detail="local_llm_malformed_response") from exc
+
+
+def _local_llm_messages(payload: LocalLlmChatRequest) -> list[dict[str, str]]:
+    if payload.messages:
+        return [
+            {"role": str(item.get("role") or "user"), "content": str(item.get("content") or "")}
+            for item in payload.messages
+            if str(item.get("content") or "").strip()
+        ]
+    message = (payload.message or "").strip()
+    if not message:
+        return []
+    context = payload.context or {}
+    product_id = payload.product_id or context.get("product_id") or "general"
+    system = (
+        "You are Cerebral Insights local llama.cpp fallback. Use only processed, "
+        "LLM-friendly Indian equities product payload context. Keep responses factual, "
+        "non-advisory, and cite missing evidence as unavailable."
+    )
+    return [
+        {"role": "system", "content": system},
+        {"role": "user", "content": f"Product: {product_id}\nPrompt: {message}"},
+    ]
+
+
+def _extract_llama_cpp_answer(response: dict[str, Any]) -> str:
+    choices = response.get("choices")
+    if not isinstance(choices, list) or not choices:
+        raise HTTPException(status_code=502, detail="local_llm_malformed_response")
+    message = choices[0].get("message") if isinstance(choices[0], dict) else None
+    content = message.get("content") if isinstance(message, dict) else None
+    answer = str(content or "").strip()
+    if not answer:
+        raise HTTPException(status_code=502, detail="local_llm_empty_response")
+    return answer
+
+
+@router.get("/local-llm-status")
+def local_llm_status() -> dict[str, Any]:
+    config = _llama_cpp_config()
+    try:
+        models = _request_llama_cpp_json("/models")
+    except HTTPException as exc:
+        return {
+            "status": "unavailable",
+            "provider": "local-llama",
+            "base_url": config["base_url"],
+            "model": config["model"],
+            "detail": exc.detail,
+        }
+    return {
+        "status": "available",
+        "provider": "local-llama",
+        "base_url": config["base_url"],
+        "model": config["model"],
+        "models": models.get("data", []),
+    }
+
+
+@router.post("/local-llm-chat")
+def local_llm_chat(payload: LocalLlmChatRequest) -> dict[str, Any]:
+    messages = _local_llm_messages(payload)
+    if not messages:
+        raise HTTPException(status_code=422, detail="message_required")
+    config = _llama_cpp_config()
+    request_payload = {
+        "model": config["model"],
+        "messages": messages,
+        "stream": False,
+        "temperature": payload.temperature,
+        "max_tokens": payload.max_tokens,
+    }
+    response = _request_llama_cpp_json("/chat/completions", request_payload)
+    return {
+        "status": "answer_ready",
+        "provider": "local-llama",
+        "model": config["model"],
+        "answer": _extract_llama_cpp_answer(response),
+        "sources": [],
+        "usage": response.get("usage", {}),
+    }
 
 
 @router.get("/context/{ticker}")

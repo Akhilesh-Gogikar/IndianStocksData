@@ -539,10 +539,10 @@ def run_e2e_journey():
         page.wait_for_selector("#dashboardHome", state="visible", timeout=5000)
         filename = capture_step_screenshot(page, 8, "dashboard_main")
         add_step(8, "Authenticated Dashboard",
-                 "Main authenticated surface showcasing all 4 business modules unlocked under the Max Plan subscription.",
+                 "Main authenticated command center with workflow-grouped modules and proactive market insight cards.",
                  filename, [
-                     "Welcome back home user greeting banner renders",
-                     "All four B2B SaaS platform tiles are unlocked (badge labels show UNLOCKED)",
+                     "Ask Cerebral is the primary post-login command surface",
+                     "Proactive insight queue renders watchlist, screener, freshness, peer, and portfolio prompts",
                      "Post-login headers (Header Navigation link bar, collaboration toggle, and profile avatar) are fully visible"
                  ])
 
@@ -550,14 +550,14 @@ def run_e2e_journey():
         # Step 9: Product surface - Equity Screener & Market Radar
         # ----------------------------------------------------
         print("[*] Running Step 9: Navigating to Equity Screener & Market Radar...")
-        page.click("#dashboardHome article:has-text('Equity Screener & Market Radar')")
+        page.click("#dashboardHome article:has-text('Market Signal Screener')")
         page.wait_for_selector("#commandView", state="visible", timeout=5000)
         filename = capture_step_screenshot(page, 9, "product_command_radar")
         add_step(9, "Market Radar Workspace",
                  "Interactive operating workspace containing equity lanes, capability definitions, and structural AI feature panels.",
                  filename, [
-                     "Crumb highlights current product: 'Equity Screener & Market Radar'",
-                     "The Active Lane dashboard, active title Stock Screener SaaS, and meta-audiences info panels are active",
+                     "Crumb highlights current product: 'Market Signal Screener'",
+                     "The Active Lane dashboard, active market intelligence workflow, and meta-audience panels are active",
                      "AI Feature panel details inputs, outputs, endpoints, and launch readiness logs"
                  ])
 
@@ -568,12 +568,14 @@ def run_e2e_journey():
         # Submit the "Adani risk signals" default search query
         page.click("#askCerebralForm button[type='submit']")
         page.wait_for_selector("#askCerebralSources article", state="attached", timeout=5000)
+        page.wait_for_selector("#askCerebralToolTimeline article", state="attached", timeout=5000)
+        page.wait_for_selector("#askCerebralInsightCards article", state="attached", timeout=5000)
         filename = capture_step_screenshot(page, 10, "ask_cerebral_query")
         add_step(10, "Ask Cerebral - Financial QA Search",
-                 "The RAG overlay and AI search answer console populated with interactive citations, data room references, and latency metrics.",
+                 "The agent-router console populated with citations, tool-call timeline, insight cards, and data room references.",
                  filename, [
                      "Ask Cerebral answer state updates to 'answer_ready'",
-                     "AI reply block describes cited tables, evidence list, and freshness dates",
+                     "AI reply block describes selected workflow, cited evidence, tool calls, and freshness dates",
                      "Citations counters, latest source dates, and data room certificates are checked and displayed"
                  ])
 
@@ -586,9 +588,10 @@ def run_e2e_journey():
         time.sleep(0.5)
         filename = capture_step_screenshot(page, 11, "ask_cerebral_directive")
         add_step(11, "Ask Cerebral - Agent Playground Directive",
-                 "Lower portion of the Ask Cerebral QA console showing the detailed cited source document context cards and copyable JSON Agent Directive.",
+                 "Lower portion of the Ask Cerebral console showing cited source cards, action router buttons, and copyable JSON agent directive.",
                  filename, [
                      "Sources documents citation cards are populated and clickable",
+                     "Recommended action buttons include brief, screener, alert, peer, watchlist, and proof routes",
                      "Agent directive pre console prints full formatted JSON configuration",
                      "Copy directive and Use as brief controls are fully responsive"
                  ])
