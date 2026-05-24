@@ -31,6 +31,13 @@ def capabilities(request: Request) -> dict[str, object]:
             "default_base_url": "http://127.0.0.1:8080/v1",
             "raw_data_boundary": "Uses processed LLM-friendly payload context only.",
         },
+        "unified_agentic_runtime": {
+            "endpoint": "POST /agents/unified-agentic-runtime",
+            "retrieval_modes": ["rag", "sql", "hybrid"],
+            "sql_policy": "read-only",
+            "provider_chain": ["firebase-free-tier", "local-llama", "local-market-data"],
+            "documents": ["agentic-execution-brief.md", "agentic-evidence-log.md"],
+        },
         "canonical_market_routes": [
             "GET /companies/{ticker}",
             "GET /quotes/{ticker}",
@@ -105,6 +112,7 @@ def capabilities(request: Request) -> dict[str, object]:
             "Canonical market routes return data plus freshness, quality, lineage, and rights metadata.",
             "Use the agent manifest and OpenAPI document for tool discovery.",
             "Agentic product pages can use Firebase Gemini first and fall back to the local llama.cpp endpoints when cloud tokens are unavailable.",
+            "Unified agentic runtime accepts Firebase free-tier provider preference and falls back to local llama.cpp or deterministic market-data synthesis.",
             "Quality checks are first-class signals and should be consumed by agents.",
             "Vector search uses local SQLite embeddings and TurboVec when the optional package is installed.",
             "Research briefs convert local evidence into cited customer-facing AI insight payloads.",

@@ -1170,6 +1170,16 @@ def agent_manifest(request: Request) -> dict[str, Any]:
         },
         {
             "router": "agents",
+            "name": "agents.unified_agentic_runtime",
+            "method": "POST",
+            "path": "/agents/unified-agentic-runtime",
+            "description": (
+                "Run one shared multi-agent runtime for any product with read-only SQL, "
+                "RAG retrieval, deep research, and generated markdown artifacts."
+            ),
+        },
+        {
+            "router": "agents",
             "name": "agents.workflow",
             "method": "GET",
             "path": "/agents/workflow/{ticker}",
