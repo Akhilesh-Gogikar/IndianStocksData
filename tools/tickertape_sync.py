@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 import datetime as dt
 import gzip
 import hashlib
@@ -12,9 +13,10 @@ import random
 import re
 import sqlite3
 import sys
+import threading
 import time
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 
 import requests
 
@@ -32,6 +34,44 @@ DEFAULT_HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
 }
+
+
+class RequestPacer:
+    def __init__(self, min_seconds: float, max_seconds: float) -> None:
+        self.min_seconds = max(0.0, min_seconds)
+        self.max_seconds = max(self.min_seconds, max_seconds)
+        self._lock = threading.Lock()
+        self._next_allowed = 0.0
+
+    def wait(self) -> None:
+        if self.max_seconds <= 0:
+            return
+        while True:
+            with self._lock:
+                now = time.monotonic()
+                wait_seconds = self._next_allowed - now
+                if wait_seconds <= 0:
+                    self._next_allowed = now + random.uniform(self.min_seconds, self.max_seconds)
+                    return
+            time.sleep(min(wait_seconds, 1.0))
+
+    def cooldown(self, seconds: float) -> None:
+        if seconds <= 0:
+            return
+        with self._lock:
+            self._next_allowed = max(self._next_allowed, time.monotonic() + seconds)
+
+
+_THREAD_STATE = threading.local()
+
+
+def thread_session() -> requests.Session:
+    session = getattr(_THREAD_STATE, "session", None)
+    if session is None:
+        session = requests.Session()
+        session.headers.update(DEFAULT_HEADERS)
+        _THREAD_STATE.session = session
+    return session
 
 
 def utc_now() -> str:
@@ -297,11 +337,24 @@ def upsert_company(conn: sqlite3.Connection, entry: Dict[str, Any], page_props: 
     )
 
 
-def fetch_html(session: requests.Session, url: str, timeout: int, retries: int) -> Tuple[Optional[requests.Response], Optional[str]]:
+def fetch_html(
+    session: requests.Session,
+    url: str,
+    timeout: int,
+    retries: int,
+    pacer: Optional[RequestPacer] = None,
+) -> Tuple[Optional[requests.Response], Optional[str]]:
     last_error = None
     for attempt in range(retries + 1):
         try:
+            if pacer is not None:
+                pacer.wait()
             response = session.get(url, timeout=timeout, allow_redirects=True)
+            if pacer is not None:
+                if response.status_code in {403, 429}:
+                    pacer.cooldown(random.uniform(30.0, 60.0))
+                elif response.status_code in {500, 502, 503, 504}:
+                    pacer.cooldown(random.uniform(5.0, 15.0))
             return response, None
         except requests.RequestException as exc:
             last_error = str(exc)
@@ -525,12 +578,23 @@ def store_skip(conn: sqlite3.Connection, run_id: int, entry: Dict[str, Any]) -> 
     )
 
 
-def sleep_between(min_seconds: float, max_seconds: float) -> None:
-    if max_seconds <= 0:
-        return
-    low = max(0.0, min_seconds)
-    high = max(low, max_seconds)
-    time.sleep(random.uniform(low, high))
+def fetch_company(
+    entry: Dict[str, Any],
+    timeout: int,
+    retries: int,
+    pacer: RequestPacer,
+) -> Dict[str, Any]:
+    subdirectory = entry["subdirectory"]
+    url = f"https://www.tickertape.in/stocks/{subdirectory}"
+    fetched_at = utc_now()
+    response, fetch_error = fetch_html(thread_session(), url, timeout, retries, pacer)
+    return {
+        "entry": entry,
+        "url": url,
+        "fetched_at": fetched_at,
+        "response": response,
+        "fetch_error": fetch_error,
+    }
 
 
 def sync(args: argparse.Namespace) -> int:
@@ -543,82 +607,119 @@ def sync(args: argparse.Namespace) -> int:
     conn = connect_db(args.db)
     init_db(conn)
     run_id = begin_run(conn, args, len(companies))
-    session = requests.Session()
-    session.headers.update(DEFAULT_HEADERS)
+    workers = max(1, int(args.workers))
+    pacer = RequestPacer(args.sleep_min, args.sleep_max)
 
     print(
         f"tickertape_sync started run_id={run_id} companies={len(companies)} "
-        f"snapshot_date={args.snapshot_date} db={args.db}"
+        f"snapshot_date={args.snapshot_date} db={args.db} workers={workers} "
+        f"sleep={args.sleep_min:.2f}-{args.sleep_max:.2f}"
     )
 
     succeeded = failed = skipped = 0
+    processed = 0
     started = time.monotonic()
-    try:
-        for index, entry in enumerate(companies, start=1):
-            subdirectory = entry["subdirectory"]
-            url = f"https://www.tickertape.in/stocks/{subdirectory}"
-            fetched_at = utc_now()
 
-            if args.resume and not args.force and already_fetched(conn, subdirectory, args.snapshot_date):
-                store_skip(conn, run_id, entry)
-                conn.commit()
-                skipped += 1
-                continue
+    def store_result(result: Dict[str, Any]) -> None:
+        nonlocal succeeded, failed
+        entry = result["entry"]
+        url = result["url"]
+        fetched_at = result["fetched_at"]
+        response = result["response"]
+        fetch_error = result["fetch_error"]
 
-            response, fetch_error = fetch_html(session, url, args.timeout, args.retries)
-            if response is None:
-                store_failure(conn, run_id, entry, args.snapshot_date, fetched_at, url, None, fetch_error or "request failed")
-                conn.commit()
-                failed += 1
-            elif response.status_code != 200:
-                store_failure(
+        if response is None:
+            store_failure(conn, run_id, entry, args.snapshot_date, fetched_at, url, None, fetch_error or "request failed")
+            conn.commit()
+            failed += 1
+        elif response.status_code != 200:
+            store_failure(
+                conn,
+                run_id,
+                entry,
+                args.snapshot_date,
+                fetched_at,
+                url,
+                response.status_code,
+                f"HTTP {response.status_code}",
+            )
+            conn.commit()
+            failed += 1
+        else:
+            try:
+                html = response.text
+                page_props = extract_page_props(html)
+                raw_path, raw_sha = write_raw(args.raw_dir, args.snapshot_date, entry["subdirectory"], page_props)
+                store_success(
                     conn,
                     run_id,
                     entry,
                     args.snapshot_date,
                     fetched_at,
                     url,
-                    response.status_code,
-                    f"HTTP {response.status_code}",
+                    response,
+                    len(html.encode("utf-8")),
+                    page_props,
+                    raw_path,
+                    raw_sha,
                 )
                 conn.commit()
+                succeeded += 1
+            except Exception as exc:  # noqa: BLE001 - store data errors in sync log
+                store_failure(conn, run_id, entry, args.snapshot_date, fetched_at, url, response.status_code, str(exc))
+                conn.commit()
                 failed += 1
-            else:
-                try:
-                    html = response.text
-                    page_props = extract_page_props(html)
-                    raw_path, raw_sha = write_raw(args.raw_dir, args.snapshot_date, subdirectory, page_props)
-                    store_success(
-                        conn,
-                        run_id,
-                        entry,
-                        args.snapshot_date,
-                        fetched_at,
-                        url,
-                        response,
-                        len(html.encode("utf-8")),
-                        page_props,
-                        raw_path,
-                        raw_sha,
-                    )
-                    conn.commit()
-                    succeeded += 1
-                except Exception as exc:  # noqa: BLE001 - store data errors in sync log
-                    store_failure(conn, run_id, entry, args.snapshot_date, fetched_at, url, response.status_code, str(exc))
-                    conn.commit()
-                    failed += 1
 
-            if args.max_failures and failed >= args.max_failures:
-                raise RuntimeError(f"max failures reached: {failed}")
+    def print_progress() -> None:
+        elapsed = time.monotonic() - started
+        print(
+            f"progress index={processed}/{len(companies)} succeeded={succeeded} "
+            f"failed={failed} skipped={skipped} elapsed_sec={elapsed:.1f}"
+        )
 
-            if index % args.progress_every == 0 or index == len(companies):
-                elapsed = time.monotonic() - started
-                print(
-                    f"progress index={index}/{len(companies)} succeeded={succeeded} "
-                    f"failed={failed} skipped={skipped} elapsed_sec={elapsed:.1f}"
-                )
+    def should_print_progress() -> bool:
+        return processed == len(companies) or (args.progress_every > 0 and processed % args.progress_every == 0)
 
-            sleep_between(args.sleep_min, args.sleep_max)
+    try:
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            pending: Set[Future] = set()
+            company_iter = iter(companies)
+            exhausted = False
+
+            def submit_next() -> None:
+                nonlocal exhausted, skipped, processed
+                while len(pending) < workers and not exhausted:
+                    try:
+                        entry = next(company_iter)
+                    except StopIteration:
+                        exhausted = True
+                        return
+
+                    subdirectory = entry["subdirectory"]
+                    if args.resume and not args.force and already_fetched(conn, subdirectory, args.snapshot_date):
+                        store_skip(conn, run_id, entry)
+                        conn.commit()
+                        skipped += 1
+                        processed += 1
+                        if should_print_progress():
+                            print_progress()
+                        continue
+
+                    pending.add(executor.submit(fetch_company, entry, args.timeout, args.retries, pacer))
+
+            submit_next()
+            while pending:
+                done, pending = wait(pending, return_when=FIRST_COMPLETED)
+                for future in done:
+                    store_result(future.result())
+                    processed += 1
+                    if args.max_failures and failed >= args.max_failures:
+                        for queued in pending:
+                            queued.cancel()
+                        raise RuntimeError(f"max failures reached: {failed}")
+                    if should_print_progress():
+                        print_progress()
+                    submit_next()
 
         status = "completed_with_failures" if failed else "completed"
         finish_run(conn, run_id, status)
@@ -645,6 +746,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--timeout", type=int, default=20)
     parser.add_argument("--retries", type=int, default=2)
+    parser.add_argument("--workers", type=int, default=3, help="Concurrent fetch workers; requests still share the jittered pacer.")
     parser.add_argument("--sleep-min", type=float, default=0.75)
     parser.add_argument("--sleep-max", type=float, default=2.0)
     parser.add_argument("--progress-every", type=int, default=25)

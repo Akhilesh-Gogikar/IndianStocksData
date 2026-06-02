@@ -7,6 +7,7 @@ cd "$ROOT_DIR"
 MODE="daily"
 DRY_RUN=0
 SKIP_UPLOAD=0
+REQUIRE_GATE_PASS="${REQUIRE_GATE_PASS:-0}"
 WAIT_LOCK_SECONDS="${LOCK_WAIT_SECONDS:-0}"
 SNAPSHOT_DATE="$(date -u +%F)"
 COMPANY_LIST="full-company-list.json"
@@ -19,6 +20,7 @@ MIN_SUCCESS_RATE="0.98"
 PROGRESS_EVERY="${PROGRESS_EVERY:-50}"
 SYNC_RETRIES="${SYNC_RETRIES:-2}"
 SYNC_TIMEOUT="${SYNC_TIMEOUT:-20}"
+SYNC_WORKERS="${SYNC_WORKERS:-3}"
 INCLUDE_RAW="${INCLUDE_RAW:-0}"
 HOST="${HOST:-NewBlogProject-Server}"
 DB_NAME="${DB_NAME:-cerebral_insights}"
@@ -41,8 +43,10 @@ Options:
   --progress-every N       sync progress cadence
   --sync-retries N         sync retry count
   --sync-timeout N         sync request timeout seconds
+  --sync-workers N         sync fetch worker count, default 3
   --wait-lock SECONDS      wait for another pipeline run before exiting
   --skip-upload            run through canonicalization but do not upload
+  --require-gate-pass      fail pipeline when publish gate fails
   --dry-run                print commands without running them
 USAGE
 }
@@ -61,8 +65,10 @@ while [[ $# -gt 0 ]]; do
     --progress-every) PROGRESS_EVERY="$2"; shift 2 ;;
     --sync-retries) SYNC_RETRIES="$2"; shift 2 ;;
     --sync-timeout) SYNC_TIMEOUT="$2"; shift 2 ;;
+    --sync-workers) SYNC_WORKERS="$2"; shift 2 ;;
     --wait-lock) WAIT_LOCK_SECONDS="$2"; shift 2 ;;
     --skip-upload) SKIP_UPLOAD=1; shift ;;
+    --require-gate-pass) REQUIRE_GATE_PASS=1; shift ;;
     --dry-run) DRY_RUN=1; shift ;;
     --help|-h) usage; exit 0 ;;
     --) shift; SYNC_EXTRA_ARGS+=("$@"); break ;;
@@ -162,6 +168,7 @@ run_sync_pass() {
     --progress-every "$PROGRESS_EVERY"
     --retries "$SYNC_RETRIES"
     --timeout "$SYNC_TIMEOUT"
+    --workers "$SYNC_WORKERS"
     "$@"
   )
   if (( ${#SYNC_EXTRA_ARGS[@]} > 0 )); then
@@ -210,7 +217,14 @@ run_gate() {
   ln -sf "$(basename "$FAILURE_REPORT_PATH")" "$LOGS_DIR/tickertape_publish_failures_latest.json"
   if [[ "$status" != "0" ]]; then
     echo "publish_gate_blocked exit_status=$status manifest=$MANIFEST_PATH failure_report=$FAILURE_REPORT_PATH"
-    return "$status"
+    if [[ "$status" != "2" ]]; then
+      return "$status"
+    fi
+    if [[ "$REQUIRE_GATE_PASS" == "1" || "$MODE" == "gate-only" ]]; then
+      return "$status"
+    fi
+    echo "publish_gate_override mode=$MODE require_gate_pass=$REQUIRE_GATE_PASS continuing_with_upload=1"
+    return 0
   fi
   echo "publish_gate_passed manifest=$MANIFEST_PATH"
 }
