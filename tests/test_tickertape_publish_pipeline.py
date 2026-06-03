@@ -126,7 +126,7 @@ class TickertapePublishPipelineSmokeTests(unittest.TestCase):
         self.assertIn("tools/tickertape_publish_gate.py", result.stdout)
         self.assertIn("load_tickertape_to_server.sh", result.stdout)
 
-    def test_publish_only_blocks_before_canonicalize_when_gate_fails(self) -> None:
+    def test_publish_only_blocks_before_canonicalize_when_gate_fails_in_strict_mode(self) -> None:
         self._build_blocked_db()
 
         result = subprocess.run(
@@ -135,6 +135,7 @@ class TickertapePublishPipelineSmokeTests(unittest.TestCase):
                 "scripts/run_tickertape_publish_pipeline.sh",
                 "--mode",
                 "publish-only",
+                "--require-gate-pass",
                 "--skip-upload",
                 "--logs-dir",
                 str(self.logs),
