@@ -23,4 +23,4 @@ make api-agent-runtime
 ```
 
 Use `PROFILE=full` with `make api` to expose every route from a single process.
-Use `PROFILE=full` with `make api` when you want one-port local smoke testing.
+Use `PROFILE=full` with `make api` for one-process local smoke testing.
