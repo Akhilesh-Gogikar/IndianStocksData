@@ -22,5 +22,4 @@ make api-market-data
 make api-agent-runtime
 ```
 
-Use `PROFILE=full` with `make api` to expose every route from a single process.
-Use `PROFILE=full` with `make api` for one-process local smoke testing.
+Use `PROFILE=full make api` to expose every route in one process for local smoke testing.
