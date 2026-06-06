@@ -81,6 +81,11 @@ case "$MODE" in
   *) echo "Unknown mode: $MODE" >&2; usage >&2; exit 64 ;;
 esac
 
+if [[ ! "$SYNC_WORKERS" =~ ^[1-9][0-9]*$ ]]; then
+  echo "Invalid --sync-workers value: $SYNC_WORKERS" >&2
+  exit 64
+fi
+
 mkdir -p "$LOGS_DIR"
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 PIPELINE_LOG="$LOGS_DIR/tickertape_publish_pipeline_${MODE}_${STAMP}.log"
