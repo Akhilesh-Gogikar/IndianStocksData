@@ -23,3 +23,4 @@ make api-agent-runtime
 ```
 
 Use `PROFILE=full make api` to expose every route in one process for local smoke testing.
+You can also run `PROFILE=full make api-profiles` to validate the available profiles without starting the server.
