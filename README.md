@@ -22,6 +22,6 @@ make api-market-data
 make api-agent-runtime
 ```
 
-Use `PROFILE=full make api` to expose all API routes in one process for local smoke testing.
+Use `PROFILE=full make api` to run all API routes in one process for local smoke testing.
 If you need the same profile split across the dedicated entrypoints, use `PROFILE=full make api-profiles`.
 You can also run `PROFILE=full make api-profiles` to validate the available profiles without starting the server.
