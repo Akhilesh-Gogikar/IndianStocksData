@@ -1,0 +1,12 @@
+tickertape_sync started run_id=42 companies=4487 snapshot_date=2026-07-05 db=local_repository/tickertape.sqlite workers=3 sleep=0.75-2.00
+progress index=50/4487 succeeded=43 failed=7 skipped=0 elapsed_sec=66.9
+progress index=100/4487 succeeded=87 failed=13 skipped=0 elapsed_sec=140.1
+progress index=150/4487 succeeded=131 failed=19 skipped=0 elapsed_sec=213.8
+progress index=200/4487 succeeded=177 failed=23 skipped=0 elapsed_sec=279.7
+progress index=250/4487 succeeded=218 failed=32 skipped=0 elapsed_sec=404.5
+progress index=300/4487 succeeded=264 failed=36 skipped=0 elapsed_sec=474.0
+progress index=350/4487 succeeded=308 failed=42 skipped=0 elapsed_sec=541.1
+progress index=400/4487 succeeded=323 failed=77 skipped=0 elapsed_sec=726.2
+progress index=450/4487 succeeded=323 failed=127 skipped=0 elapsed_sec=928.8
+progress index=500/4487 succeeded=323 failed=177 skipped=0 elapsed_sec=1133.6
+progress index=550/4487 succeeded=323 failed=227 skipped=0 elapsed_sec=1345.5

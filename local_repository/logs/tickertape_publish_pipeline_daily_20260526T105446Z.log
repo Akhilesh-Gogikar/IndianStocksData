@@ -1,0 +1,12 @@
+tickertape_publish_pipeline mode=daily snapshot_date=2026-05-26 started_at=2026-05-26T10:54:46Z
+python_bin=/Users/akhileshgogikar/miniconda3/bin/python3
+dry_run=1; skipping lock acquisition
+sync_pass=primary
++ bash scripts/run_tickertape_daily_sync.sh --company-list full-company-list.json --db local_repository/tickertape.sqlite --raw-dir local_repository/raw --snapshot-date 2026-05-26 --progress-every 50 --retries 2 --timeout 20
+sync_pass=repair
++ bash scripts/run_tickertape_daily_sync.sh --company-list full-company-list.json --db local_repository/tickertape.sqlite --raw-dir local_repository/raw --snapshot-date 2026-05-26 --progress-every 50 --retries 2 --timeout 20
++ /Users/akhileshgogikar/miniconda3/bin/python3 tools/tickertape_status.py --db local_repository/tickertape.sqlite
++ /Users/akhileshgogikar/miniconda3/bin/python3 tools/tickertape_publish_gate.py --db local_repository/tickertape.sqlite --company-list full-company-list.json --snapshot-date 2026-05-26 --min-success-rate 0.98 --manifest local_repository/logs/tickertape_publish_manifest_20260526T105446Z.json --failure-report local_repository/logs/tickertape_publish_failures_20260526T105446Z.json
++ /Users/akhileshgogikar/miniconda3/bin/python3 system/canonical_tickertape.py --source-db local_repository/tickertape.sqlite --target-db system/market_intel.db --schema system/schema.sql
++ env INCLUDE_RAW=0 HOST=NewBlogProject-Server DB_NAME=cerebral_insights bash cerebral-insights-platform/scripts/load_tickertape_to_server.sh
+tickertape_publish_pipeline mode=daily finished_at=2026-05-26T10:54:46Z

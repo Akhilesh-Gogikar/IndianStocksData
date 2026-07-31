@@ -1,0 +1,3752 @@
+{
+  "failure_count": 468,
+  "failure_limit": 500,
+  "failures": [
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:33:13Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "3rd-rock-multimedia-RDR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:01:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "a-and-m-febcon-AMF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:04:05Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "aananda-lakshmi-spinning-mills-AANA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:04:07Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "aanchal-ispat-AAN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:02:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "aar-commercial-company-AARC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:02:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "aar-shyam-india-investment-company-AARS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:02:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "abc-gas-international-ABCG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:05:28Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ace-edutrend-ACEE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:05:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "acewin-agriteck-ACEW"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:06:28Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "adharshila-capital-services-ADHA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:07:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ador-fontech-ADO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:07:23Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "advance-syntex-ASY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:07:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "advik-laboratories-ADVIK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:07:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "agrimony-commodities-AGR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:08:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ajel-AJE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:09:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "alchemist-ALCL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:09:00Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "alchemist-corporation-ALC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:09:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "alka-securities-ALK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:10:08Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "alps-motor-finance-ALPSM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:10:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "alstone-textiles-india-ALS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:10:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ambassador-intra-holdings-AIH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:10:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ambition-mica-AMB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:11:07Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "amit-international-AMIT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:11:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "amrit-corp-AMRI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:11:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "aneri-fincap-ANE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:03:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ang-industries-ANGI"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T11:12:17Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ansal-properties-and-infrastructure-ANSP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:13:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "apollo-tricoat-tubes-APOL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:13:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "arambhan-hospitality-services-ARA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:13:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "archana-software-ARSW"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:13:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "arcotech-ARCO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:14:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "aris-international-ARISI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:14:14Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "aroma-enterprises-india-ARO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:03:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "arss-infrastructure-projects-ARSS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:14:22Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "artedz-fabs-ARTD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:14:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "arvind-fashions-partly-paidup-AFL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:15:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "asahi-industries-ASA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:15:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ashiana-ispat-ASHIA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:15:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ashoka-refineries-ASHO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:17:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "asya-infosoft-ASYA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:17:39Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "atlas-jewellery-india-AJI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:03:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "atn-international-ASGM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:18:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "autolite-india-AUTL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:18:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "autumn-builders-AUT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:03:53Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "avi-products-india-APIL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:19:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "b-p-capital-BPC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:20:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "baba-agro-food-BABA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:21:08Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ballarpur-industries-BILT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:21:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bansal-multiflex-BANL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:22:06Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "baron-infotech-BAR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:23:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bhagyanagar-properties-BHAY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:23:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bhalchandram-clothing-BHAL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:24:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bharat-textiles-and-proofing-industries-BHAT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:24:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bheema-cements-BHE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:24:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bhoruka-aluminium-BHR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:24:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bijoy-hans-BIJ"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:24:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bil-energy-systems-BILE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:25:06Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "binny-BINNY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:25:08Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "binny-mills-BINN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:25:23Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "birla-tyres-BIRT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:19:55Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bls-infotech-BLS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:25:56Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "blueblood-ventures-BVL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:26:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bombay-potteries-and-tiles-BOM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:26:20Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bombay-rayon-fashions-BRFL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:26:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "boston-leasing-and-finance-BLF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:26:48Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "brandbucket-media-and-technology-BRANB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:27:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "bronze-infra-tech-BIT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:27:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "budge-budge-company-BUD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:27:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "c-and-c-constructions-CCCL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:28:53Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "canopy-finance-CAN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:29:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "capricorn-systems-global-solutions-CAPR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:29:33Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "carnation-industries-CAR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:29:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "castex-technologies-CASE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:30:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "centerac-technologies-CEN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:27:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ces-CES"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:30:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "chamak-holdings-CHAM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:30:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "channel-nine-entertainment-CNE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:30:53Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "charms-industries-CHAR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:31:03Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "chase-bright-steel-CHAS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:32:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "cigniti-technologies-CIGN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:32:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "cimmco-CIMM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:32:21Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "cistro-telelink-CIS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:32:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "citizen-infoline-CIL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:32:39Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "cityon-systems-india-CITY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:28:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ckp-leisure-CKPL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:28:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ckp-products-CKPP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:32:53Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "classic-global-finance-and-capital-CCF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:28:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "cmm-infraprojects-CMMN"
+    },
+    {
+      "error": "HTTPSConnectionPool(host='www.tickertape.in', port=443): Read timed out. (read timeout=20)",
+      "fetched_at": "2026-06-01T11:33:28Z",
+      "http_status": null,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "colgate-palmolive-india-COLG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:36:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "concrete-credit-CON"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:37:03Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "corporate-courier-and-cargo-CORP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:37:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "coventry-coil-o-matic-haryana-COVE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:37:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "cox-and-kings-COKI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:37:23Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "cox-and-kings-financial-service-COKN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:37:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "crescent-leasing-CLL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:40:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "deccan-bearings-DECA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:40:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "deep-energy-resources-DEIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:41:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "devhari-exports-india-DEV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:41:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "devoted-construction-DCL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:38:57Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dfm-foods-DFMF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:41:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dhanada-corporation-DHAN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:41:54Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dhani-services-INDB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:42:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dharani-sugars-and-chemicals-DHRS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:42:28Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dhruv-estates-DHRUV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:42:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dhruv-wellness-DWL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:42:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "diamant-infrastructure-DIAM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:43:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dolphin-medical-services-DOLPH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:39:20Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dq-entertainment-international-DQEN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:43:55Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dugar-housing-developments-DUG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:45:21Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "easun-reyrolle-EASU"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:45:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "eco-friendly-food-processing-park-EFP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:45:40Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ecs-biztech-ECS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:45:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "edynamics-solutions-EDS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:44:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ema-india-EMA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:44:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "emco-EMCO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:47:03Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "empee-distilleries-EMDI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:47:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "equitas-holdings-EQHL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:47:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "eros-international-media-EROS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:48:05Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "esteem-bio-organic-food-processing-EBF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:48:14Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "euro-asia-exports-EUR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:48:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "euro-ceramics-EUCE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:48:20Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "euro-multivision-EUMU"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T11:49:21Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "farmax-india-FARM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:49:23Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "faze-three-autofab-FAZ"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:50:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "first-winner-industries-FIST"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:50:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "five-x-tradecom-FIV"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T11:50:57Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "fortune-international-FOR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:51:01Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "foundry-fuel-products-FFP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:51:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "fourth-generation-information-systems-THG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:51:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "fraser-and-company-FRAS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:51:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "future-retail-FRTL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:51:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "future-supply-chain-solutions-FUTE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:51:55Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "g-d-trading-and-agencies-GDT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:52:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "g-tech-info-training-GTE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:53:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "g-v-films-GVF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:53:48Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gagan-polycot-india-GAG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:53:58Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "galada-power-and-telecommunication-GALP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:54:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gallantt-ispat-GLIL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:54:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "garden-silk-mills-GARD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:55:03Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "garodia-chemical-GARO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:55:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gati-GATI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:52:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gb-global-GBGL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:52:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gbl-industries-GBL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:55:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "geetanjali-credit-and-capital-GEE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:55:53Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gemini-communication-GEMC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:55:56Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "genera-agri-corp-GENE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:52:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gir-natureview-resorts-GIRN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:56:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "girdharilal-sugar-and-allied-industries-GIRD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:57:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "globus-corpooration-KRCA"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T11:57:43Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "go-fashion-india-GOC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:58:22Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gokul-solutions-GOK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:58:28Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "goldcoin-health-foods-GOLDC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:58:30Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "goldcrest-corporation-GOLCR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:58:23Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "goldline-international-finvest-GOLDL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:58:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "golkonda-aluminium-extrusions-GOLKO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:00:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gujarat-metallic-coal-and-coke-GME"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:01:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "gujarat-sidhee-cement-GSCL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:02:57Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "hari-govind-international-HARIG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:03:08Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "harita-seating-systems-HASS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:03:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "harmony-capital-services-HRM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:02:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "himalaya-granites-HIMG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:05:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "hindustan-fluoro-carbons-HINF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:05:54Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "hindusthan-national-glass-and-industries-HNGI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:06:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "housing-development-finance-corporation-HDFC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:02:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "hpc-biosciences-HPC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:02:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "hrb-floriculture-HRB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:06:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "husys-consulting-HUSY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:06:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "i-power-solutions-india-IPO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:07:05Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "icici-securities-ICCI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:07:07Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "icl-organic-dairy-products-ICL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:07:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "idfc-IDFC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:09:03Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "inceptum-enterprises-INCE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:09:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ind-swift-INSW"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:09:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "india-green-reality-IGR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:09:41Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "india-infraspace-INDIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:09:54Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "india-radiators-INR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:12:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "inditrade-capital-INDIC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:13:20Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "indo-global-enterprises-INDO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:15:57Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "infra-industries-INFRI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:16:05Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "innocorp-INNOC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:08:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "inox-leisure-INOL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:16:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "inox-wind-energy-IWE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:16:23Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "insilco-INSI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:16:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "integra-telecommunication-and-software-INTE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:17:05Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "international-constructions-IRNA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:17:08Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "international-data-management-IDM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:18:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "interworld-digital-INTER"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:08:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ismt-ISMT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "j-l-morison-india-JLM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "j-r-foods-JRF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:21:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jaihind-projects-JHNP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:21:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jain-studios-JSTD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:21:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jaiprakash-associates-JAIA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:21:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jaisukh-dealers-JDL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:22:05Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "janus-corporation-JAN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:22:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jatalia-global-ventures-JAT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:22:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jaybharat-textiles-and-real-estate-JAYT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:22:40Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jaypee-infratech-JYPE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:22:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jaysynth-dyestuff-india-JAYD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:21Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jbf-industries-JBFI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:06Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jct-JCT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:22:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jet-airways-india-JET"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:24:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jigyasa-infrastructure-JIGY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:24:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jik-industries-JIKI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:24:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jinaams-dress-JIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:24:40Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jindal-stainless-hisar-JINA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:24:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jiya-eco-products-JIYA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jmc-projects-india-JMCP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jmg-corporation-JMG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jmt-auto-JMTA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:25:42Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "joy-realty-JOY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jpt-securities-JPT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jsg-leasing-JSG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:20:59Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jsw-ispat-special-products-MNET"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:25:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jubilant-industries-JUBL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:26:22Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "jyotirgamya-enterprises-JEL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:26:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "k-k-fincorp-KKF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:26:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "k-lifestyle-and-industries-KLIF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T11:07:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kamron-laboratories-KAMR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:32:03Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kandagiri-spinning-mills-KAND"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:32:05Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kanel-industries-KANEL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:32:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "karuturi-global-KART"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:27:14Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kd-leisures-KDL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:33:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kesoram-industries-partly-paidup-KILP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:36:08Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "khoday-india-KHOD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:37:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kiran-print-pack-KIRA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:27:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "klg-capital-services-KLG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:39:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kome-on-communication-KOC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:39:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "konark-synthetic-KONA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:40:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kratos-energy-and-infrastructure-KRAT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:30:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ksk-energy-ventures-KSKE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:30:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kss-KSSL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:42:28Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kushal-KUS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:42:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kwality-KDAI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:42:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "kwality-credit-and-leasing-KWA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:46:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "linaks-microelectronics-LINA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:48:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "lohia-securities-LOH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:48:59Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "lynx-machinery-and-commercials-LYN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:53:21Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "madhuban-constructions-MCL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:53:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "madhur-industries-MADHR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:54:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mahan-industries-MAHAN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:54:30Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mahashree-trading-MAHS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:54:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mahavir-industries-MAHAV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:54:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mahesh-developers-MAHE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:57:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "majestic-research-services-and-solutions-MRS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:58:23Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mangalam-timber-products-MGLT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:58:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mangalore-chemicals-and-fertilisers-MNGL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:58:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "manjeera-constructions-MANJ"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:59:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "master-chemicals-MASC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:59:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mathew-easow-research-securities-MAT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:00:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "max-alert-systems-MAS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:00:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "max-ventures-and-industries-MAXV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:00:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mcdowell-holdings-MCDH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:00:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "medinova-diagnostic-services-MEDIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:01:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mega-fin-india-MEGF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:01:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "meglon-infra-real-india-MEGL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:01:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mena-mani-industries-MENA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:01:42Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mercator-MRCT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:01:55Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mesco-pharmaceuticals-MES"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:02:00Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "metalyst-forgings-MTAL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:02:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "metkore-alloys-and-industries-METK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:02:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "meyer-apparel-MAM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:02:48Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "midas-infra-trade-MIDI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:02:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mideast-integrated-steels-MIDE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:49:39Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mig-media-neurons-MIGM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:03:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mindtree-MINT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:03:41Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mipco-seamless-rings-gujarat-MPC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:05:03Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mohota-industries-MOHO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:05:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mold-tek-packaging-partly-paidup-MOL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T12:51:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mps-infotecnics-VIFY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:06:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "mukand-engineers-MUKE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:07:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "n-d-metal-industries-NDM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:07:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "n2n-technologies-NNT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:09:06Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "narbada-gems-and-jewellery-NARB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:09:48Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "national-steel-and-agro-industries-NTST"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:10:00Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "natural-capsules-partly-paidup-NATCA"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T13:10:03Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "nava-bharat-ventures-NABV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:10:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "navketan-merchants-NAVK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:10:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "navoday-enterprises-NAVO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:10:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "negotium-international-trade-NEG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:10:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "neogem-india-NOG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:10:57Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "netripples-software-NET"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:11:31Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "nicco-uco-alliance-credit-NICCO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:11:42Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "nikki-global-finance-NIK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:12:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "nitin-fire-protection-industries-NIFP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:12:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "nouritrans-exim-NEL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:13:07Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "nutricircle-NUTR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:13:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "nuway-organic-naturals-india-NUW"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:13:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "oceanaa-biotek-industries-OBI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:13:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ocl-iron-and-steel-OCLI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:14:06Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "omansh-enterprises-OMA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:14:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "omkar-overseas-OMK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:14:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "opto-circuits-india-OPTO"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T13:15:29Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "orient-tradelink-ORI"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T13:15:49Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ortel-communications-ORTE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:15:54Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "oscar-global-OSCA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:16:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "oswal-overseas-OSW"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:16:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ozone-world-OZO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:17:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pact-industries-PAC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:17:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pae-PAEL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:18:28Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "panoramic-universal-PANU"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:18:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "paos-industries-PAO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:18:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "parabolic-drugs-PARB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:18:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "parenteral-drugs-india-PADG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:18:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pariksha-fin-invest-lease-PARI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:19:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "patel-integrated-logistics-partly-paidup-PATI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:20:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "penta-gold-PENA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:20:14Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "peoples-investment-PEO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:20:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "photon-capital-advisors-PHOTO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:21:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pioneer-agro-extracts-PIO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:21:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pioneer-distilleries-PION"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:21:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "piramal-enterprises-PIRA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:21:22Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pithampur-poly-products-PIT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:16:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pm-telelinnks-PMT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:21:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "polo-hotels-POLO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:22:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "polytex-india-POLYT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:22:39Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "powerful-technologies-PROW"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:22:41Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "prabhat-dairy-PRDA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:22:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "prabhat-technologies-india-PTI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:22:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pradhin-PRADH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:22:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pradip-overseas-PRAD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:23:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pranavaditya-spinning-mills-PRAN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:23:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "prem-somani-financial-services-PRESO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:23:54Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pressman-advertising-PRES"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:24:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "procal-electronics-india-PROCA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:25:01Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "progrex-ventures-PROG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:25:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "punj-lloyd-PUJL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:25:53Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "purohit-construction-PURO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:26:00Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "pushpanjali-realms-and-infratech-PUSP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:26:14Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "quadrant-televentures-QUAD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:26:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "quasar-india-QUA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:26:33Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "quest-financial-services-QFS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:26:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "r-j-bio-tech-RJB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:28:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "raasi-refractories-RASS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:28:20Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "radhagobind-commercial-RCL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:28:39Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rahul-merchandising-RAH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:28:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rainbow-denim-RAI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:29:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rajeswari-infrastructure-RAJI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:29:59Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rama-petrochemicals-RAMAE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:30:09Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ramasigns-industries-RAMAS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:30:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rane-brake-linings-RABL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:30:39Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rane-engine-valve-RAEV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:06:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rangoli-tradecomm-RTL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:30:56Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rasoya-proteins-RSPR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:31:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "raymed-labs-RAY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:27:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rcc-cements-RCCE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:31:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "refnol-resins-and-chemicals-REF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:31:56Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "reliance-capital-RLCP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:32:55Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "richa-industries-RIC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:33:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ridings-consulting-engineers-india-RID"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:33:14Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "riga-sugar-company-RIG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:33:41Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rohit-ferro-tech-ROHT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:33:50Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rolta-india-ROLT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:27:47Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rpp-infra-projects-partly-paidup-RPP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:34:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "rushil-decor-partly-paidup-RUS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:35:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "s-k-s-textiles-SKST"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:35:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "s-r-industries-SRIND"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:35:14Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "s-s-infrastructure-development-consultants-SSFR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:37:56Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sagar-diamonds-SAG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:38:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sahara-one-media-and-entertainment-SAHAR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:38:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sai-industries-SAIN"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T13:38:33Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sal-automotive-SALAU"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:39:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sanasa-tech-feb-SAN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:39:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sanghi-industries-SNGI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:39:40Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sanghvi-forging-and-engineering-SANH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:39:48Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sankhya-infotech-SANK"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:40:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sashwat-technocrats-SAS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:40:54Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sathavahana-ispat-SATV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:41:00Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "satin-creditcare-network-partly-paidup-SAT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:41:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "satra-properties-india-SATRA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:41:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "scooters-india-SCO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:41:56Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "seasons-furnishings-SEASO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:42:29Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "seven-hill-industries-SEV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:42:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shaba-chemicals-SHABC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:42:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shah-foods-SHAHF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:43:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shamrock-industrial-co-SHAM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:43:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sharanam-infraproject-and-trading-SIPT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:45:39Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shilpi-cable-technologies-SHIC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:45:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shirpur-gold-refinery-SHGR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:46:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shiv-om-invesment-and-consultancy-SIC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:46:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shree-bhawani-paper-mills-SHBH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:47:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shree-nidhi-trading-company-SNT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:47:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shree-rajeshwaranand-paper-mills-SRP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:48:43Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shri-bholanath-carpets-SHRIB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:49:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shri-niwas-leasing-and-finance-SHRIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:49:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "shriram-city-union-finance-SHCU"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:51:53Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "simplex-mills-company-SIM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:52:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sintex-plastics-technology-SINT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:35:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sip-industries-SIPI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:53:08Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sj-corporation-SJC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:54:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "solis-marketing-SOL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:55:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "soni-soya-products-SOSO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:36:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "soril-infra-resources-SORI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:55:59Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "span-divergent-SDL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:56:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sparkling-india-finshares-SIF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:56:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "spicy-entertainment-and-media-SPI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:36:48Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sps-finquest-SPS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:57:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "srei-infrastructure-finance-SREI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:57:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sri-krishna-constructions-india-SKC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:57:58Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sri-vajra-granites-SRIV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:58:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "standard-shoe-sole-and-mould-india-STDS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:59:15Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "starlit-power-systems-STAR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:59:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "starlite-components-STARL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:00:31Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "stephanotis-finance-STEPH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:37:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sti-india-STIB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:01:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sturdy-industries-STU"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:02:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sujana-universal-industries-SJIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:04:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sunshine-capital-SCL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:05:57Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "surana-industries-SRIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:06:27Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "surya-chakra-power-corporation-SURYA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:06:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "suryavanshi-spinning-mills-SURYV"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T14:06:55Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "suven-pharmaceuticals-SUVH"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T14:07:16Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "swadeshi-industries-and-leasing-SWAD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:07:58Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sword-edge-commercials-SWO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:08:13Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "syncom-healthcare-SYNH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:10:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "talwalkars-better-value-fitness-TALW"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:10:52Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "talwalkars-healthclubs-TLWA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:11:48Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tata-coffee-TACO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:12:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tata-metaliks-TMET"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:12:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tata-motors---dvr-TAMdv"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:12:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tata-steel-long-products-TTST"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:12:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tayo-rolls-TATAY"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:09:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tci-developers-TCID"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:09:45Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tcns-clothing-co-TCNS"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:12:46Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "technofab-engineering-TECN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:13:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "terrascope-ventures-TERR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:13:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "thambbi-modern-spinning-mills-THA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:14:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tiaan-ayurvedic-and-herbs-TAH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:15:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tilak-ventures-partly-paidup-TILA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:15:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tinplate-company-of-india-TINP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:10:01Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tmt-i-TMT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:16:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "todays-writing-instruments-TWPL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:10:07Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "trc-financial-services-TRC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:18:17Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "trekkingtoescom-HIP"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:19:24Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "turner-industries-LAD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:10:26Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "tv18-broadcast-TVEB"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:19:35Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "twinstar-industries-TWI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:20:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "udaipur-cement-works-JKU"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:20:33Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ujjivan-financial-services-UJVF"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:20:44Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "umang-dairies-UMDA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:21:04Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "union-quality-plastics-UNQ"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:21:10Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "uniply-industries-UNIN"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:21:22Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "unistar-multimedia-UNIST"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:21:51Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "united-textiles-UNITE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:21:54Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "unity-infraprojects-UTIL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:22:12Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "uniworth-WOOL"
+    },
+    {
+      "error": "HTTP 502",
+      "fetched_at": "2026-06-01T11:04:35Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "upasana-finance-UPA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:22:31Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "ushdev-international-USH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:22:33Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "usher-agro-USAG"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:22:36Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "uttam-galva-steels-UTTM"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:22:40Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "uttam-value-steels-UTTV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:24:40Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "vardhman-concrete-VARDH"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:25:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "vax-housing-finance-corporation-VAX"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:26:11Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "viaan-industries-VIA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:26:19Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "videocon-industries-VEDI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:26:28Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "vijay-textiles-VIJA"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:26:38Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "vikas-ecotech-partly-paidup-VEC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:26:42Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "vikas-lifecare-partly-paidup-VLI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:27:34Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "virescent-renewable-energy-trust-VIRE"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:28:16Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "vitesse-agro-VIT"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:23:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "vkj-infradevelopers-VKJ"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:29:25Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "wardwizard-innovations-and-mobility-partlypaidup-WARD"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T13:07:18Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "welcon-international-WELC"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:29:49Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "wellness-noni-WELL"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:30:32Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "white-organic-retail-WOR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:31:02Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "woodsvilla-WOO"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:32:01Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "yuranus-infrastructure-YUR"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-06-01T14:32:37Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "zicom-electronic-security-systems-ZICO"
+    }
+  ],
+  "run_id": 16,
+  "snapshot_date": "2026-06-01"
+}

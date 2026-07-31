@@ -1,10 +1,10 @@
 {
-  "failure_count": 468,
+  "failure_count": 470,
   "failure_limit": 500,
   "failures": [
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:46:43Z",
+      "fetched_at": "2026-07-14T12:46:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -12,7 +12,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:02:03Z",
+      "fetched_at": "2026-07-14T11:03:14Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -20,7 +20,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:03:23Z",
+      "fetched_at": "2026-07-14T11:04:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -28,7 +28,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:03:23Z",
+      "fetched_at": "2026-07-14T11:04:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -36,7 +36,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:02:18Z",
+      "fetched_at": "2026-07-14T11:03:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -44,7 +44,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:02:19Z",
+      "fetched_at": "2026-07-14T11:03:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -52,7 +52,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:02:23Z",
+      "fetched_at": "2026-07-14T11:03:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -60,7 +60,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:04:12Z",
+      "fetched_at": "2026-07-14T11:05:14Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -68,7 +68,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:04:16Z",
+      "fetched_at": "2026-07-14T11:05:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -76,7 +76,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:04:43Z",
+      "fetched_at": "2026-07-14T11:05:45Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -84,7 +84,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:05:05Z",
+      "fetched_at": "2026-07-14T11:06:06Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -92,7 +92,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:05:15Z",
+      "fetched_at": "2026-07-14T11:06:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -100,7 +100,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:05:20Z",
+      "fetched_at": "2026-07-14T11:06:22Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -108,7 +108,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:05:29Z",
+      "fetched_at": "2026-07-14T11:06:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -116,7 +116,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:05:50Z",
+      "fetched_at": "2026-07-14T11:06:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -124,7 +124,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:06:14Z",
+      "fetched_at": "2026-07-14T11:07:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -132,7 +132,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:06:13Z",
+      "fetched_at": "2026-07-14T11:07:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -140,7 +140,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:06:27Z",
+      "fetched_at": "2026-07-14T11:07:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -148,7 +148,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:06:53Z",
+      "fetched_at": "2026-07-14T11:07:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -156,7 +156,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:06:54Z",
+      "fetched_at": "2026-07-14T11:07:54Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -164,7 +164,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:07:11Z",
+      "fetched_at": "2026-07-14T11:08:12Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -172,7 +172,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:07:18Z",
+      "fetched_at": "2026-07-14T11:08:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -180,7 +180,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:07:29Z",
+      "fetched_at": "2026-07-14T11:08:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -188,7 +188,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:07:37Z",
+      "fetched_at": "2026-07-14T11:08:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -196,7 +196,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:07:52Z",
+      "fetched_at": "2026-07-14T11:08:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -204,7 +204,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:02:50Z",
+      "fetched_at": "2026-07-14T11:04:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -212,7 +212,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:08:41Z",
+      "fetched_at": "2026-07-14T11:09:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -220,7 +220,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:08:47Z",
+      "fetched_at": "2026-07-14T11:09:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -228,7 +228,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:08:51Z",
+      "fetched_at": "2026-07-14T11:09:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -236,7 +236,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:08:57Z",
+      "fetched_at": "2026-07-14T11:10:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -244,7 +244,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:09:12Z",
+      "fetched_at": "2026-07-14T11:10:12Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -252,7 +252,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:09:19Z",
+      "fetched_at": "2026-07-14T11:10:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -260,7 +260,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:03:05Z",
+      "fetched_at": "2026-07-14T11:04:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -268,7 +268,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:09:24Z",
+      "fetched_at": "2026-07-14T11:10:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -276,7 +276,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:09:40Z",
+      "fetched_at": "2026-07-14T11:10:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -284,39 +284,23 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:09:51Z",
+      "fetched_at": "2026-07-14T11:10:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "asahi-industries-ASA"
     },
     {
-      "error": "HTTPSConnectionPool(host='www.tickertape.in', port=443): Max retries exceeded with url: /stocks/ashiana-housing-AHFN (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10be52ff0>: Failed to resolve 'www.tickertape.in' ([Errno 8] nodename nor servname provided, or not known)\"))",
-      "fetched_at": "2026-07-13T11:10:00Z",
-      "http_status": null,
-      "raw_json_path": null,
-      "status": "failed",
-      "subdirectory": "ashiana-housing-AHFN"
-    },
-    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:10:02Z",
+      "fetched_at": "2026-07-14T11:11:01Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "ashiana-ispat-ASHIA"
     },
     {
-      "error": "HTTPSConnectionPool(host='www.tickertape.in', port=443): Max retries exceeded with url: /stocks/ashirwad-steels-and-industries-ASHS (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10be509b0>: Failed to resolve 'www.tickertape.in' ([Errno 8] nodename nor servname provided, or not known)\"))",
-      "fetched_at": "2026-07-13T11:10:08Z",
-      "http_status": null,
-      "raw_json_path": null,
-      "status": "failed",
-      "subdirectory": "ashirwad-steels-and-industries-ASHS"
-    },
-    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:11:17Z",
+      "fetched_at": "2026-07-14T11:11:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -324,7 +308,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:11:51Z",
+      "fetched_at": "2026-07-14T11:11:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -332,7 +316,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:12:06Z",
+      "fetched_at": "2026-07-14T11:12:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -340,7 +324,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:03:09Z",
+      "fetched_at": "2026-07-14T11:04:14Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -348,7 +332,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:12:25Z",
+      "fetched_at": "2026-07-14T11:12:20Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -356,7 +340,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:12:31Z",
+      "fetched_at": "2026-07-14T11:12:27Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -364,7 +348,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:03:15Z",
+      "fetched_at": "2026-07-14T11:04:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -372,7 +356,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:03:17Z",
+      "fetched_at": "2026-07-14T11:04:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -380,7 +364,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:12:58Z",
+      "fetched_at": "2026-07-14T11:12:54Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -388,7 +372,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:13:39Z",
+      "fetched_at": "2026-07-14T11:13:37Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -396,7 +380,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:14:10Z",
+      "fetched_at": "2026-07-14T11:14:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -404,7 +388,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:14:38Z",
+      "fetched_at": "2026-07-14T11:14:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -412,7 +396,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:14:48Z",
+      "fetched_at": "2026-07-14T11:14:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -420,7 +404,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:15:31Z",
+      "fetched_at": "2026-07-14T11:15:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -428,7 +412,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:15:35Z",
+      "fetched_at": "2026-07-14T11:15:27Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -436,7 +420,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:15:58Z",
+      "fetched_at": "2026-07-14T11:15:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -444,7 +428,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:16:13Z",
+      "fetched_at": "2026-07-14T11:16:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -452,7 +436,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:16:16Z",
+      "fetched_at": "2026-07-14T11:16:12Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -460,7 +444,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:16:21Z",
+      "fetched_at": "2026-07-14T11:16:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -468,7 +452,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:16:23Z",
+      "fetched_at": "2026-07-14T11:16:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -476,7 +460,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:16:31Z",
+      "fetched_at": "2026-07-14T11:16:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -484,7 +468,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:16:32Z",
+      "fetched_at": "2026-07-14T11:16:27Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -492,7 +476,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:16:41Z",
+      "fetched_at": "2026-07-14T11:16:38Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -500,7 +484,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:13:26Z",
+      "fetched_at": "2026-07-14T11:13:25Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -508,7 +492,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:03Z",
+      "fetched_at": "2026-07-14T11:16:59Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -516,7 +500,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:15Z",
+      "fetched_at": "2026-07-14T11:17:13Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -524,7 +508,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:17Z",
+      "fetched_at": "2026-07-14T11:17:14Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -532,7 +516,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:25Z",
+      "fetched_at": "2026-07-14T11:17:25Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -540,7 +524,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:32Z",
+      "fetched_at": "2026-07-14T11:17:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -548,7 +532,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:45Z",
+      "fetched_at": "2026-07-14T11:17:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -556,7 +540,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:49Z",
+      "fetched_at": "2026-07-14T11:17:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -564,7 +548,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:17:55Z",
+      "fetched_at": "2026-07-14T11:17:57Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -572,7 +556,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:18:49Z",
+      "fetched_at": "2026-07-14T11:18:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -580,7 +564,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:19:03Z",
+      "fetched_at": "2026-07-14T11:19:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -588,7 +572,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:19:10Z",
+      "fetched_at": "2026-07-14T11:19:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -596,7 +580,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:19:13Z",
+      "fetched_at": "2026-07-14T11:19:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -604,7 +588,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:19:27Z",
+      "fetched_at": "2026-07-14T11:19:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -612,7 +596,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:18:07Z",
+      "fetched_at": "2026-07-14T11:18:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -620,7 +604,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:19:44Z",
+      "fetched_at": "2026-07-14T11:19:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -628,7 +612,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:19:55Z",
+      "fetched_at": "2026-07-14T11:20:03Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -636,7 +620,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:19:57Z",
+      "fetched_at": "2026-07-14T11:20:05Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -644,7 +628,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:20:02Z",
+      "fetched_at": "2026-07-14T11:20:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -652,7 +636,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:20:36Z",
+      "fetched_at": "2026-07-14T11:20:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -660,7 +644,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:20:38Z",
+      "fetched_at": "2026-07-14T11:20:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -668,7 +652,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:20:49Z",
+      "fetched_at": "2026-07-14T11:20:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -676,7 +660,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:20:53Z",
+      "fetched_at": "2026-07-14T11:20:57Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -684,7 +668,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:21:02Z",
+      "fetched_at": "2026-07-14T11:21:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -692,7 +676,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:18:17Z",
+      "fetched_at": "2026-07-14T11:18:22Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -700,7 +684,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:18:18Z",
+      "fetched_at": "2026-07-14T11:18:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -708,7 +692,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:21:09Z",
+      "fetched_at": "2026-07-14T11:21:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -716,7 +700,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:18:22Z",
+      "fetched_at": "2026-07-14T11:18:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -724,7 +708,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:21:45Z",
+      "fetched_at": "2026-07-14T11:21:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -732,7 +716,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:22:19Z",
+      "fetched_at": "2026-07-14T11:22:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -740,7 +724,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:22:27Z",
+      "fetched_at": "2026-07-14T11:22:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -748,7 +732,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:22:31Z",
+      "fetched_at": "2026-07-14T11:22:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -756,7 +740,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:22:30Z",
+      "fetched_at": "2026-07-14T11:22:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -764,7 +748,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:22:45Z",
+      "fetched_at": "2026-07-14T11:22:45Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -772,7 +756,15 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:24:22Z",
+      "fetched_at": "2026-07-14T11:23:58Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "dalmia-bharat-sugar-and-industries-DLMI"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-07-14T11:24:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -780,7 +772,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:24:34Z",
+      "fetched_at": "2026-07-14T11:24:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -788,7 +780,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:24:55Z",
+      "fetched_at": "2026-07-14T11:24:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -796,7 +788,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:25:01Z",
+      "fetched_at": "2026-07-14T11:25:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -804,7 +796,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:23:31Z",
+      "fetched_at": "2026-07-14T11:23:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -812,7 +804,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:25:10Z",
+      "fetched_at": "2026-07-14T11:25:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -820,7 +812,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:25:15Z",
+      "fetched_at": "2026-07-14T11:25:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -828,7 +820,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:25:27Z",
+      "fetched_at": "2026-07-14T11:25:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -836,7 +828,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:25:33Z",
+      "fetched_at": "2026-07-14T11:25:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -844,7 +836,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:25:36Z",
+      "fetched_at": "2026-07-14T11:25:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -852,7 +844,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:25:45Z",
+      "fetched_at": "2026-07-14T11:25:39Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -860,7 +852,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:26:14Z",
+      "fetched_at": "2026-07-14T11:26:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -868,7 +860,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:23:44Z",
+      "fetched_at": "2026-07-14T11:23:43Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -876,7 +868,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:26:25Z",
+      "fetched_at": "2026-07-14T11:26:22Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -884,7 +876,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:27:14Z",
+      "fetched_at": "2026-07-14T11:27:14Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -892,7 +884,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:27:20Z",
+      "fetched_at": "2026-07-14T11:27:20Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -900,7 +892,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:27:26Z",
+      "fetched_at": "2026-07-14T11:27:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -908,7 +900,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:27:31Z",
+      "fetched_at": "2026-07-14T11:27:30Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -916,7 +908,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:26:56Z",
+      "fetched_at": "2026-07-14T11:26:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -924,7 +916,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:26:58Z",
+      "fetched_at": "2026-07-14T11:26:57Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -932,7 +924,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:28:15Z",
+      "fetched_at": "2026-07-14T11:28:12Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -940,7 +932,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:28:36Z",
+      "fetched_at": "2026-07-14T11:28:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -948,7 +940,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:28:41Z",
+      "fetched_at": "2026-07-14T11:28:37Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -956,7 +948,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:28:55Z",
+      "fetched_at": "2026-07-14T11:28:50Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -964,7 +956,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:29:01Z",
+      "fetched_at": "2026-07-14T11:28:57Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -972,7 +964,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:29:03Z",
+      "fetched_at": "2026-07-14T11:28:58Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -980,7 +972,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:29:05Z",
+      "fetched_at": "2026-07-14T11:29:01Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -988,7 +980,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:29:43Z",
+      "fetched_at": "2026-07-14T11:29:38Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -996,7 +988,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:29:44Z",
+      "fetched_at": "2026-07-14T11:29:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1004,7 +996,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:30:14Z",
+      "fetched_at": "2026-07-14T11:30:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1012,7 +1004,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:30:18Z",
+      "fetched_at": "2026-07-14T11:30:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1020,7 +1012,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:30:41Z",
+      "fetched_at": "2026-07-14T11:30:38Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1028,7 +1020,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:30:44Z",
+      "fetched_at": "2026-07-14T11:30:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1036,7 +1028,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:30:48Z",
+      "fetched_at": "2026-07-14T11:30:43Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1044,7 +1036,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:06Z",
+      "fetched_at": "2026-07-14T11:31:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1052,7 +1044,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:08Z",
+      "fetched_at": "2026-07-14T11:31:01Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1060,7 +1052,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:13Z",
+      "fetched_at": "2026-07-14T11:31:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1068,15 +1060,23 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:15Z",
+      "fetched_at": "2026-07-14T11:31:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "g-g-engineering-GGE"
     },
     {
+      "error": "HTTP 502",
+      "fetched_at": "2026-07-14T11:31:10Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "g-k-consultants-GKC"
+    },
+    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:23Z",
+      "fetched_at": "2026-07-14T11:31:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1084,7 +1084,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:32:10Z",
+      "fetched_at": "2026-07-14T11:32:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1092,7 +1092,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:32:16Z",
+      "fetched_at": "2026-07-14T11:32:25Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1100,7 +1100,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:32:24Z",
+      "fetched_at": "2026-07-14T11:32:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1108,7 +1108,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:32:31Z",
+      "fetched_at": "2026-07-14T11:32:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1116,7 +1116,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:32:56Z",
+      "fetched_at": "2026-07-14T11:33:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1124,7 +1124,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:33:03Z",
+      "fetched_at": "2026-07-14T11:33:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1132,7 +1132,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:33:13Z",
+      "fetched_at": "2026-07-14T11:33:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1140,7 +1140,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:28Z",
+      "fetched_at": "2026-07-14T11:31:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1148,7 +1148,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:29Z",
+      "fetched_at": "2026-07-14T11:31:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1156,7 +1156,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:33:30Z",
+      "fetched_at": "2026-07-14T11:33:37Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1164,7 +1164,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:33:32Z",
+      "fetched_at": "2026-07-14T11:33:39Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1172,7 +1172,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:33:35Z",
+      "fetched_at": "2026-07-14T11:33:42Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1180,7 +1180,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:31:41Z",
+      "fetched_at": "2026-07-14T11:31:50Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1188,7 +1188,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:34:03Z",
+      "fetched_at": "2026-07-14T11:34:09Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1196,7 +1196,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:34:26Z",
+      "fetched_at": "2026-07-14T11:34:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1204,7 +1204,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:34:39Z",
+      "fetched_at": "2026-07-14T11:34:44Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1212,7 +1212,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:34:56Z",
+      "fetched_at": "2026-07-14T11:35:01Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1220,7 +1220,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:35:02Z",
+      "fetched_at": "2026-07-14T11:35:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1228,7 +1228,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:34:57Z",
+      "fetched_at": "2026-07-14T11:35:02Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1236,7 +1236,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:35:12Z",
+      "fetched_at": "2026-07-14T11:35:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1244,7 +1244,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:36:16Z",
+      "fetched_at": "2026-07-14T11:36:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1252,7 +1252,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:36:27Z",
+      "fetched_at": "2026-07-14T11:36:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1260,7 +1260,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:37:37Z",
+      "fetched_at": "2026-07-14T11:37:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1268,7 +1268,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:37:44Z",
+      "fetched_at": "2026-07-14T11:37:49Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1276,7 +1276,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:37:47Z",
+      "fetched_at": "2026-07-14T11:37:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1284,7 +1284,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:37:09Z",
+      "fetched_at": "2026-07-14T11:37:15Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1292,7 +1292,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:39:02Z",
+      "fetched_at": "2026-07-14T11:39:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1300,7 +1300,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:39:21Z",
+      "fetched_at": "2026-07-14T11:39:22Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1308,7 +1308,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:39:45Z",
+      "fetched_at": "2026-07-14T11:39:43Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1316,7 +1316,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:37:25Z",
+      "fetched_at": "2026-07-14T11:37:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1324,7 +1324,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:37:27Z",
+      "fetched_at": "2026-07-14T11:37:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1332,7 +1332,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:39:55Z",
+      "fetched_at": "2026-07-14T11:39:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1340,7 +1340,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:39:59Z",
+      "fetched_at": "2026-07-14T11:39:58Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1348,7 +1348,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:40:09Z",
+      "fetched_at": "2026-07-14T11:40:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1356,7 +1356,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:40:10Z",
+      "fetched_at": "2026-07-14T11:40:09Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1364,7 +1364,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:40:15Z",
+      "fetched_at": "2026-07-14T11:40:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1372,7 +1372,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:41:19Z",
+      "fetched_at": "2026-07-14T11:41:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1380,7 +1380,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:41:29Z",
+      "fetched_at": "2026-07-14T11:41:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1388,7 +1388,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:41:41Z",
+      "fetched_at": "2026-07-14T11:41:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1396,7 +1396,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:41:45Z",
+      "fetched_at": "2026-07-14T11:41:45Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1404,7 +1404,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:41:53Z",
+      "fetched_at": "2026-07-14T11:41:54Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1412,7 +1412,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:42:26Z",
+      "fetched_at": "2026-07-14T11:42:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1420,7 +1420,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:42:48Z",
+      "fetched_at": "2026-07-14T11:42:49Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1428,7 +1428,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:43:27Z",
+      "fetched_at": "2026-07-14T11:43:27Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1436,7 +1436,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:43:32Z",
+      "fetched_at": "2026-07-14T11:43:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1444,7 +1444,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:40:45Z",
+      "fetched_at": "2026-07-14T11:40:45Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1452,7 +1452,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:43:40Z",
+      "fetched_at": "2026-07-14T11:43:45Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1460,7 +1460,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:43:44Z",
+      "fetched_at": "2026-07-14T11:43:49Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1468,7 +1468,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:43:54Z",
+      "fetched_at": "2026-07-14T11:43:58Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1476,7 +1476,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:44:10Z",
+      "fetched_at": "2026-07-14T11:44:15Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1484,7 +1484,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:44:13Z",
+      "fetched_at": "2026-07-14T11:44:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1492,7 +1492,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:44:18Z",
+      "fetched_at": "2026-07-14T11:44:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1500,7 +1500,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:40:57Z",
+      "fetched_at": "2026-07-14T11:40:56Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1508,7 +1508,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:44:52Z",
+      "fetched_at": "2026-07-14T11:44:54Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1516,7 +1516,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:44:52Z",
+      "fetched_at": "2026-07-14T11:44:56Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1524,7 +1524,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:38Z",
+      "fetched_at": "2026-07-14T11:45:42Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1532,7 +1532,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:46Z",
+      "fetched_at": "2026-07-14T11:45:49Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1540,7 +1540,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:54Z",
+      "fetched_at": "2026-07-14T11:45:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1548,7 +1548,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:56Z",
+      "fetched_at": "2026-07-14T11:45:58Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1556,7 +1556,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:05Z",
+      "fetched_at": "2026-07-14T11:46:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1564,7 +1564,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:08Z",
+      "fetched_at": "2026-07-14T11:46:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1572,7 +1572,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:22Z",
+      "fetched_at": "2026-07-14T11:46:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1580,7 +1580,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:23Z",
+      "fetched_at": "2026-07-14T11:46:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1588,7 +1588,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:26Z",
+      "fetched_at": "2026-07-14T11:46:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1596,7 +1596,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:44:55Z",
+      "fetched_at": "2026-07-14T11:45:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1604,7 +1604,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:44:45Z",
+      "fetched_at": "2026-07-14T11:44:48Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1612,7 +1612,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:31Z",
+      "fetched_at": "2026-07-14T11:46:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1620,7 +1620,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:42Z",
+      "fetched_at": "2026-07-14T11:46:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1628,7 +1628,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:44Z",
+      "fetched_at": "2026-07-14T11:46:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1636,7 +1636,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:46:45Z",
+      "fetched_at": "2026-07-14T11:46:54Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1644,7 +1644,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:47:01Z",
+      "fetched_at": "2026-07-14T11:47:09Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1652,7 +1652,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:47:06Z",
+      "fetched_at": "2026-07-14T11:47:15Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1660,7 +1660,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:10Z",
+      "fetched_at": "2026-07-14T11:45:14Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1668,7 +1668,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:12Z",
+      "fetched_at": "2026-07-14T11:45:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1676,7 +1676,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:14Z",
+      "fetched_at": "2026-07-14T11:45:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1684,7 +1684,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:47:20Z",
+      "fetched_at": "2026-07-14T11:47:30Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1692,7 +1692,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:15Z",
+      "fetched_at": "2026-07-14T11:45:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1700,7 +1700,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:16Z",
+      "fetched_at": "2026-07-14T11:45:20Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1708,7 +1708,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:45:21Z",
+      "fetched_at": "2026-07-14T11:45:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1716,7 +1716,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:47:24Z",
+      "fetched_at": "2026-07-14T11:47:34Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1724,7 +1724,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:47:44Z",
+      "fetched_at": "2026-07-14T11:47:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1732,7 +1732,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:47:48Z",
+      "fetched_at": "2026-07-14T11:47:59Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1740,7 +1740,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:47:54Z",
+      "fetched_at": "2026-07-14T11:48:05Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1748,7 +1748,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:05:05Z",
+      "fetched_at": "2026-07-14T11:06:05Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1756,7 +1756,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:49:16Z",
+      "fetched_at": "2026-07-14T11:49:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1764,7 +1764,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:49:16Z",
+      "fetched_at": "2026-07-14T11:49:34Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1772,7 +1772,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:49:36Z",
+      "fetched_at": "2026-07-14T11:49:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1780,7 +1780,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:48:01Z",
+      "fetched_at": "2026-07-14T11:48:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1788,7 +1788,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:49:49Z",
+      "fetched_at": "2026-07-14T11:50:09Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1796,7 +1796,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:50:09Z",
+      "fetched_at": "2026-07-14T11:50:25Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1804,7 +1804,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:50:25Z",
+      "fetched_at": "2026-07-14T11:50:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1812,7 +1812,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:50:45Z",
+      "fetched_at": "2026-07-14T11:51:03Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1820,7 +1820,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:48:15Z",
+      "fetched_at": "2026-07-14T11:48:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1828,7 +1828,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:51:13Z",
+      "fetched_at": "2026-07-14T11:51:27Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1836,7 +1836,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:51:14Z",
+      "fetched_at": "2026-07-14T11:51:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1844,7 +1844,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:48:39Z",
+      "fetched_at": "2026-07-14T11:48:50Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1852,7 +1852,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:48:40Z",
+      "fetched_at": "2026-07-14T11:48:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1860,7 +1860,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:52:06Z",
+      "fetched_at": "2026-07-14T11:52:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1868,7 +1868,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:52:10Z",
+      "fetched_at": "2026-07-14T11:52:25Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1876,7 +1876,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:52:09Z",
+      "fetched_at": "2026-07-14T11:52:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1884,15 +1884,23 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:53:35Z",
+      "fetched_at": "2026-07-14T11:53:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "linaks-microelectronics-LINA"
     },
     {
+      "error": "HTTP 502",
+      "fetched_at": "2026-07-14T11:53:54Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "lincoln-pharmaceuticals-LINP"
+    },
+    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:53:49Z",
+      "fetched_at": "2026-07-14T11:54:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1900,7 +1908,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:54:17Z",
+      "fetched_at": "2026-07-14T11:54:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1908,7 +1916,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:55:21Z",
+      "fetched_at": "2026-07-14T11:55:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1916,7 +1924,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:55:24Z",
+      "fetched_at": "2026-07-14T11:55:43Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1924,7 +1932,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:55:51Z",
+      "fetched_at": "2026-07-14T11:56:09Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1932,7 +1940,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:56:00Z",
+      "fetched_at": "2026-07-14T11:56:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1940,7 +1948,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:56:04Z",
+      "fetched_at": "2026-07-14T11:56:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1948,7 +1956,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:56:05Z",
+      "fetched_at": "2026-07-14T11:56:23Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1956,7 +1964,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:56:24Z",
+      "fetched_at": "2026-07-14T11:56:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1964,7 +1972,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:56:53Z",
+      "fetched_at": "2026-07-14T11:57:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1972,7 +1980,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:56:53Z",
+      "fetched_at": "2026-07-14T11:57:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1980,7 +1988,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:56:57Z",
+      "fetched_at": "2026-07-14T11:57:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1988,7 +1996,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:57:35Z",
+      "fetched_at": "2026-07-14T11:57:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -1996,7 +2004,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:57:37Z",
+      "fetched_at": "2026-07-14T11:57:57Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2004,7 +2012,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:57:49Z",
+      "fetched_at": "2026-07-14T11:58:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2012,7 +2020,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:57:48Z",
+      "fetched_at": "2026-07-14T11:58:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2020,7 +2028,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:01Z",
+      "fetched_at": "2026-07-14T11:58:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2028,7 +2036,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:12Z",
+      "fetched_at": "2026-07-14T11:58:34Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2036,7 +2044,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:20Z",
+      "fetched_at": "2026-07-14T11:58:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2044,7 +2052,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:30Z",
+      "fetched_at": "2026-07-14T11:58:49Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2052,7 +2060,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:39Z",
+      "fetched_at": "2026-07-14T11:58:59Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2060,7 +2068,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:44Z",
+      "fetched_at": "2026-07-14T11:59:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2068,7 +2076,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:50Z",
+      "fetched_at": "2026-07-14T11:59:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2076,7 +2084,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:52Z",
+      "fetched_at": "2026-07-14T11:59:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2084,7 +2092,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:58:53Z",
+      "fetched_at": "2026-07-14T11:59:13Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2092,7 +2100,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:59:00Z",
+      "fetched_at": "2026-07-14T11:59:20Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2100,7 +2108,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:59:05Z",
+      "fetched_at": "2026-07-14T11:59:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2108,7 +2116,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:59:06Z",
+      "fetched_at": "2026-07-14T11:59:25Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2116,7 +2124,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:54:32Z",
+      "fetched_at": "2026-07-14T11:54:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2124,7 +2132,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:59:21Z",
+      "fetched_at": "2026-07-14T11:59:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2132,7 +2140,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:59:34Z",
+      "fetched_at": "2026-07-14T11:59:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2140,7 +2148,15 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:00:10Z",
+      "fetched_at": "2026-07-14T12:00:06Z",
+      "http_status": 404,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "miven-machine-tools-MIV"
+    },
+    {
+      "error": "HTTP 404",
+      "fetched_at": "2026-07-14T12:00:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2148,7 +2164,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:00:17Z",
+      "fetched_at": "2026-07-14T12:00:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2156,7 +2172,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T11:54:49Z",
+      "fetched_at": "2026-07-14T11:55:09Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2164,7 +2180,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:00:55Z",
+      "fetched_at": "2026-07-14T12:01:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2172,7 +2188,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:01:28Z",
+      "fetched_at": "2026-07-14T12:01:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2180,7 +2196,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:01:35Z",
+      "fetched_at": "2026-07-14T12:01:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2188,7 +2204,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:02:12Z",
+      "fetched_at": "2026-07-14T12:02:23Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2196,7 +2212,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:02:32Z",
+      "fetched_at": "2026-07-14T12:02:46Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2204,7 +2220,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:02:57Z",
+      "fetched_at": "2026-07-14T12:03:12Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2212,7 +2228,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:03:05Z",
+      "fetched_at": "2026-07-14T12:03:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2220,7 +2236,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:03:13Z",
+      "fetched_at": "2026-07-14T12:03:30Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2228,7 +2244,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:03:16Z",
+      "fetched_at": "2026-07-14T12:03:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2236,7 +2252,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:03:25Z",
+      "fetched_at": "2026-07-14T12:03:44Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2244,7 +2260,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:03:34Z",
+      "fetched_at": "2026-07-14T12:03:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2252,7 +2268,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:03:42Z",
+      "fetched_at": "2026-07-14T12:03:59Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2260,7 +2276,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:04:05Z",
+      "fetched_at": "2026-07-14T12:04:22Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2268,7 +2284,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:04:13Z",
+      "fetched_at": "2026-07-14T12:04:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2276,7 +2292,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:04:35Z",
+      "fetched_at": "2026-07-14T12:04:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2284,7 +2300,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:04:55Z",
+      "fetched_at": "2026-07-14T12:05:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2292,7 +2308,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:05:09Z",
+      "fetched_at": "2026-07-14T12:05:23Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2300,7 +2316,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:05:11Z",
+      "fetched_at": "2026-07-14T12:05:27Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2308,7 +2324,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:05:23Z",
+      "fetched_at": "2026-07-14T12:05:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2316,7 +2332,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:05:15Z",
+      "fetched_at": "2026-07-14T12:05:30Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2324,7 +2340,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:05:45Z",
+      "fetched_at": "2026-07-14T12:06:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2332,7 +2348,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:05:51Z",
+      "fetched_at": "2026-07-14T12:06:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2340,7 +2356,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:06:13Z",
+      "fetched_at": "2026-07-14T12:06:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2348,7 +2364,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:06:52Z",
+      "fetched_at": "2026-07-14T12:07:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2356,7 +2372,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:07:00Z",
+      "fetched_at": "2026-07-14T12:07:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2364,7 +2380,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:07:05Z",
+      "fetched_at": "2026-07-14T12:07:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2372,7 +2388,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:07:47Z",
+      "fetched_at": "2026-07-14T12:08:12Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2380,7 +2396,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:07:53Z",
+      "fetched_at": "2026-07-14T12:08:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2388,7 +2404,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:08:25Z",
+      "fetched_at": "2026-07-14T12:08:48Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2396,7 +2412,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:08:30Z",
+      "fetched_at": "2026-07-14T12:08:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2404,7 +2420,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:08:32Z",
+      "fetched_at": "2026-07-14T12:08:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2412,7 +2428,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:08:42Z",
+      "fetched_at": "2026-07-14T12:09:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2420,7 +2436,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:08:43Z",
+      "fetched_at": "2026-07-14T12:09:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2428,7 +2444,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:09:11Z",
+      "fetched_at": "2026-07-14T12:09:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2436,7 +2452,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:09:36Z",
+      "fetched_at": "2026-07-14T12:09:54Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2444,7 +2460,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:09:39Z",
+      "fetched_at": "2026-07-14T12:09:57Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2452,7 +2468,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:10:02Z",
+      "fetched_at": "2026-07-14T12:10:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2460,7 +2476,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:10:14Z",
+      "fetched_at": "2026-07-14T12:10:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2468,23 +2484,23 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:10:15Z",
+      "fetched_at": "2026-07-14T12:10:33Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "pioneer-distilleries-PION"
     },
     {
-      "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:10:20Z",
-      "http_status": 404,
+      "error": "HTTP 502",
+      "fetched_at": "2026-07-14T12:10:38Z",
+      "http_status": 502,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "piramal-enterprises-PIRA"
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:10:21Z",
+      "fetched_at": "2026-07-14T12:10:39Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2492,7 +2508,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:07:09Z",
+      "fetched_at": "2026-07-14T12:07:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2500,7 +2516,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:10:33Z",
+      "fetched_at": "2026-07-14T12:11:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2508,7 +2524,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:10:49Z",
+      "fetched_at": "2026-07-14T12:11:22Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2516,7 +2532,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:06Z",
+      "fetched_at": "2026-07-14T12:11:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2524,7 +2540,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:07Z",
+      "fetched_at": "2026-07-14T12:11:37Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2532,7 +2548,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:09Z",
+      "fetched_at": "2026-07-14T12:11:38Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2540,7 +2556,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:14Z",
+      "fetched_at": "2026-07-14T12:11:46Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2548,7 +2564,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:16Z",
+      "fetched_at": "2026-07-14T12:11:46Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2556,7 +2572,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:26Z",
+      "fetched_at": "2026-07-14T12:11:57Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2564,7 +2580,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:43Z",
+      "fetched_at": "2026-07-14T12:12:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2572,7 +2588,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:11:54Z",
+      "fetched_at": "2026-07-14T12:12:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2580,7 +2596,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:12:27Z",
+      "fetched_at": "2026-07-14T12:13:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2588,7 +2604,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:12:32Z",
+      "fetched_at": "2026-07-14T12:13:09Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2596,7 +2612,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:12:46Z",
+      "fetched_at": "2026-07-14T12:13:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2604,7 +2620,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:12:56Z",
+      "fetched_at": "2026-07-14T12:13:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2612,7 +2628,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:13:01Z",
+      "fetched_at": "2026-07-14T12:13:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2620,7 +2636,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:13:06Z",
+      "fetched_at": "2026-07-14T12:13:45Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2628,7 +2644,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:13:12Z",
+      "fetched_at": "2026-07-14T12:13:50Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2636,7 +2652,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:13:14Z",
+      "fetched_at": "2026-07-14T12:13:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2644,7 +2660,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:13:22Z",
+      "fetched_at": "2026-07-14T12:14:02Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2652,7 +2668,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:14:10Z",
+      "fetched_at": "2026-07-14T12:14:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2660,7 +2676,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:14:16Z",
+      "fetched_at": "2026-07-14T12:14:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2668,7 +2684,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:14:29Z",
+      "fetched_at": "2026-07-14T12:15:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2676,7 +2692,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:14:36Z",
+      "fetched_at": "2026-07-14T12:15:13Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2684,7 +2700,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:14:56Z",
+      "fetched_at": "2026-07-14T12:15:34Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2692,7 +2708,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:15:16Z",
+      "fetched_at": "2026-07-14T12:15:54Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2700,7 +2716,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:15:20Z",
+      "fetched_at": "2026-07-14T12:16:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2708,7 +2724,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:15:38Z",
+      "fetched_at": "2026-07-14T12:16:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2716,7 +2732,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:15:39Z",
+      "fetched_at": "2026-07-14T12:16:19Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2724,7 +2740,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:32:28Z",
+      "fetched_at": "2026-07-14T12:32:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2732,7 +2748,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:15:51Z",
+      "fetched_at": "2026-07-14T12:16:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2740,7 +2756,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:16:10Z",
+      "fetched_at": "2026-07-14T12:16:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2748,7 +2764,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:13:34Z",
+      "fetched_at": "2026-07-14T12:14:13Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2756,7 +2772,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:16:18Z",
+      "fetched_at": "2026-07-14T12:16:59Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2764,7 +2780,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:16:28Z",
+      "fetched_at": "2026-07-14T12:17:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2772,7 +2788,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:17:09Z",
+      "fetched_at": "2026-07-14T12:17:50Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2780,7 +2796,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:17:19Z",
+      "fetched_at": "2026-07-14T12:18:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2788,7 +2804,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:17:20Z",
+      "fetched_at": "2026-07-14T12:18:02Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2796,7 +2812,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:17:36Z",
+      "fetched_at": "2026-07-14T12:18:20Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2804,7 +2820,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:17:41Z",
+      "fetched_at": "2026-07-14T12:18:24Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2812,7 +2828,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:13:57Z",
+      "fetched_at": "2026-07-14T12:14:34Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2820,7 +2836,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:18:15Z",
+      "fetched_at": "2026-07-14T12:18:58Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2828,7 +2844,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:18:27Z",
+      "fetched_at": "2026-07-14T12:19:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2836,7 +2852,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:18:33Z",
+      "fetched_at": "2026-07-14T12:19:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2844,7 +2860,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:18:34Z",
+      "fetched_at": "2026-07-14T12:19:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2852,7 +2868,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:20:14Z",
+      "fetched_at": "2026-07-14T12:20:58Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2860,7 +2876,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:20:24Z",
+      "fetched_at": "2026-07-14T12:21:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2868,7 +2884,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:20:29Z",
+      "fetched_at": "2026-07-14T12:21:13Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2876,7 +2892,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:21:04Z",
+      "fetched_at": "2026-07-14T12:21:50Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2884,7 +2900,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:21:07Z",
+      "fetched_at": "2026-07-14T12:21:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2892,7 +2908,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:21:20Z",
+      "fetched_at": "2026-07-14T12:22:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2900,7 +2916,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:21:22Z",
+      "fetched_at": "2026-07-14T12:22:06Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2908,7 +2924,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:21:27Z",
+      "fetched_at": "2026-07-14T12:22:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2916,7 +2932,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:21:58Z",
+      "fetched_at": "2026-07-14T12:22:42Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2924,7 +2940,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:22:04Z",
+      "fetched_at": "2026-07-14T12:22:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2932,7 +2948,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:22:06Z",
+      "fetched_at": "2026-07-14T12:22:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2940,7 +2956,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:22:07Z",
+      "fetched_at": "2026-07-14T12:22:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2948,7 +2964,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:22:36Z",
+      "fetched_at": "2026-07-14T12:23:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2956,7 +2972,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:22:43Z",
+      "fetched_at": "2026-07-14T12:23:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2964,7 +2980,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:22:54Z",
+      "fetched_at": "2026-07-14T12:23:37Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2972,7 +2988,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:23:05Z",
+      "fetched_at": "2026-07-14T12:23:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2980,7 +2996,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:23:09Z",
+      "fetched_at": "2026-07-14T12:23:48Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2988,7 +3004,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:23:11Z",
+      "fetched_at": "2026-07-14T12:23:51Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -2996,7 +3012,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:23:25Z",
+      "fetched_at": "2026-07-14T12:24:07Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3004,7 +3020,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:23:38Z",
+      "fetched_at": "2026-07-14T12:24:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3012,7 +3028,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:24:14Z",
+      "fetched_at": "2026-07-14T12:24:55Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3020,7 +3036,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:24:17Z",
+      "fetched_at": "2026-07-14T12:24:59Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3028,7 +3044,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:24:39Z",
+      "fetched_at": "2026-07-14T12:25:18Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3036,7 +3052,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:24:47Z",
+      "fetched_at": "2026-07-14T12:25:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3044,7 +3060,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:25:06Z",
+      "fetched_at": "2026-07-14T12:25:46Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3052,7 +3068,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:25:13Z",
+      "fetched_at": "2026-07-14T12:25:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3060,7 +3076,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:25:41Z",
+      "fetched_at": "2026-07-14T12:26:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3068,7 +3084,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:25:50Z",
+      "fetched_at": "2026-07-14T12:26:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3076,7 +3092,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:25:56Z",
+      "fetched_at": "2026-07-14T12:26:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3084,7 +3100,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:26:46Z",
+      "fetched_at": "2026-07-14T12:27:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3092,7 +3108,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:26:59Z",
+      "fetched_at": "2026-07-14T12:27:39Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3100,7 +3116,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:18:59Z",
+      "fetched_at": "2026-07-14T12:19:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3108,7 +3124,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:27:00Z",
+      "fetched_at": "2026-07-14T12:27:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3116,7 +3132,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:27:10Z",
+      "fetched_at": "2026-07-14T12:27:48Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3124,7 +3140,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:27:37Z",
+      "fetched_at": "2026-07-14T12:28:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3132,7 +3148,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:27:56Z",
+      "fetched_at": "2026-07-14T12:28:37Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3140,7 +3156,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:19:25Z",
+      "fetched_at": "2026-07-14T12:20:05Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3148,7 +3164,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:28:19Z",
+      "fetched_at": "2026-07-14T12:28:58Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3156,7 +3172,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:28:25Z",
+      "fetched_at": "2026-07-14T12:29:02Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3164,7 +3180,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:28:39Z",
+      "fetched_at": "2026-07-14T12:29:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3172,7 +3188,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:19:35Z",
+      "fetched_at": "2026-07-14T12:20:13Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3180,7 +3196,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:28:53Z",
+      "fetched_at": "2026-07-14T12:29:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3188,15 +3204,23 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:29:03Z",
+      "fetched_at": "2026-07-14T12:29:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "sri-krishna-constructions-india-SKC"
     },
     {
+      "error": "HTTP 502",
+      "fetched_at": "2026-07-14T12:29:40Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "sri-nachammai-cotton-mills-SRINC"
+    },
+    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:29:09Z",
+      "fetched_at": "2026-07-14T12:29:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3204,7 +3228,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:29:16Z",
+      "fetched_at": "2026-07-14T12:30:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3212,7 +3236,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:29:31Z",
+      "fetched_at": "2026-07-14T12:30:15Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3220,7 +3244,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:29:33Z",
+      "fetched_at": "2026-07-14T12:30:17Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3228,7 +3252,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:29:54Z",
+      "fetched_at": "2026-07-14T12:30:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3236,7 +3260,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:19:47Z",
+      "fetched_at": "2026-07-14T12:20:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3244,7 +3268,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:30:09Z",
+      "fetched_at": "2026-07-14T12:30:48Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3252,7 +3276,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:30:26Z",
+      "fetched_at": "2026-07-14T12:31:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3260,23 +3284,15 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:31:09Z",
+      "fetched_at": "2026-07-14T12:31:49Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "sunshine-capital-SCL"
     },
     {
-      "error": "HTTP 502",
-      "fetched_at": "2026-07-13T12:31:43Z",
-      "http_status": 502,
-      "raw_json_path": null,
-      "status": "failed",
-      "subdirectory": "supriya-lifescience-SUPRI"
-    },
-    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:32:01Z",
+      "fetched_at": "2026-07-14T12:32:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3284,7 +3300,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:32:18Z",
+      "fetched_at": "2026-07-14T12:32:43Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3292,7 +3308,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:32:21Z",
+      "fetched_at": "2026-07-14T12:32:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3300,7 +3316,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:33:04Z",
+      "fetched_at": "2026-07-14T12:33:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3308,7 +3324,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:33:14Z",
+      "fetched_at": "2026-07-14T12:33:38Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3316,7 +3332,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:34:17Z",
+      "fetched_at": "2026-07-14T12:34:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3324,7 +3340,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:34:18Z",
+      "fetched_at": "2026-07-14T12:34:43Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3332,7 +3348,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:34:51Z",
+      "fetched_at": "2026-07-14T12:35:16Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3340,7 +3356,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:34:59Z",
+      "fetched_at": "2026-07-14T12:35:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3348,7 +3364,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:35:00Z",
+      "fetched_at": "2026-07-14T12:35:27Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3356,7 +3372,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:35:05Z",
+      "fetched_at": "2026-07-14T12:35:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3364,7 +3380,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:35:14Z",
+      "fetched_at": "2026-07-14T12:35:42Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3372,7 +3388,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:33:34Z",
+      "fetched_at": "2026-07-14T12:34:00Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3380,7 +3396,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:33:39Z",
+      "fetched_at": "2026-07-14T12:34:04Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3388,7 +3404,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:35:26Z",
+      "fetched_at": "2026-07-14T12:35:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3396,7 +3412,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:35:40Z",
+      "fetched_at": "2026-07-14T12:36:10Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3404,7 +3420,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:35:50Z",
+      "fetched_at": "2026-07-14T12:36:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3412,7 +3428,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:36:10Z",
+      "fetched_at": "2026-07-14T12:36:42Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3420,7 +3436,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:36:43Z",
+      "fetched_at": "2026-07-14T12:36:49Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3428,7 +3444,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:36:55Z",
+      "fetched_at": "2026-07-14T12:37:06Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3436,7 +3452,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:33:47Z",
+      "fetched_at": "2026-07-14T12:34:12Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3444,7 +3460,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:37:15Z",
+      "fetched_at": "2026-07-14T12:37:29Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3452,7 +3468,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:33:50Z",
+      "fetched_at": "2026-07-14T12:34:14Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3460,23 +3476,15 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:37:51Z",
+      "fetched_at": "2026-07-14T12:38:02Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "trekkingtoescom-HIP"
     },
     {
-      "error": "HTTP 502",
-      "fetched_at": "2026-07-13T12:37:52Z",
-      "http_status": 502,
-      "raw_json_path": null,
-      "status": "failed",
-      "subdirectory": "trent-TREN"
-    },
-    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:38:35Z",
+      "fetched_at": "2026-07-14T12:38:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3484,7 +3492,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:38:38Z",
+      "fetched_at": "2026-07-14T12:38:34Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3492,7 +3500,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:34:03Z",
+      "fetched_at": "2026-07-14T12:34:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3500,7 +3508,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:38:45Z",
+      "fetched_at": "2026-07-14T12:38:40Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3508,7 +3516,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:39:06Z",
+      "fetched_at": "2026-07-14T12:39:01Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3516,7 +3524,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:39:15Z",
+      "fetched_at": "2026-07-14T12:39:08Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3524,15 +3532,23 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:39:24Z",
+      "fetched_at": "2026-07-14T12:39:15Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "umang-dairies-UMDA"
     },
     {
+      "error": "HTTP 502",
+      "fetched_at": "2026-07-14T12:39:17Z",
+      "http_status": 502,
+      "raw_json_path": null,
+      "status": "failed",
+      "subdirectory": "uni-abex-alloy-products-UNIAB"
+    },
+    {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:39:38Z",
+      "fetched_at": "2026-07-14T12:39:32Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3540,7 +3556,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:39:44Z",
+      "fetched_at": "2026-07-14T12:39:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3548,7 +3564,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:39:49Z",
+      "fetched_at": "2026-07-14T12:39:43Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3556,7 +3572,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:40:03Z",
+      "fetched_at": "2026-07-14T12:39:59Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3564,7 +3580,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:40:05Z",
+      "fetched_at": "2026-07-14T12:40:02Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3572,7 +3588,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:40:16Z",
+      "fetched_at": "2026-07-14T12:40:13Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3580,7 +3596,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:40:31Z",
+      "fetched_at": "2026-07-14T12:40:26Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3588,7 +3604,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:40:32Z",
+      "fetched_at": "2026-07-14T12:40:28Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3596,7 +3612,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:40:34Z",
+      "fetched_at": "2026-07-14T12:40:30Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3604,7 +3620,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:40:37Z",
+      "fetched_at": "2026-07-14T12:40:34Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3612,7 +3628,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:41:44Z",
+      "fetched_at": "2026-07-14T12:41:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3620,7 +3636,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:42:04Z",
+      "fetched_at": "2026-07-14T12:42:01Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3628,7 +3644,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:42:35Z",
+      "fetched_at": "2026-07-14T12:42:31Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3636,7 +3652,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:42:39Z",
+      "fetched_at": "2026-07-14T12:42:35Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3644,7 +3660,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:42:47Z",
+      "fetched_at": "2026-07-14T12:42:41Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3652,7 +3668,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:42:53Z",
+      "fetched_at": "2026-07-14T12:42:47Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3660,7 +3676,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:42:55Z",
+      "fetched_at": "2026-07-14T12:42:48Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3668,7 +3684,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:43:25Z",
+      "fetched_at": "2026-07-14T12:43:20Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3676,7 +3692,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:43:53Z",
+      "fetched_at": "2026-07-14T12:43:46Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3684,7 +3700,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:41:00Z",
+      "fetched_at": "2026-07-14T12:40:53Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3692,7 +3708,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:44:33Z",
+      "fetched_at": "2026-07-14T12:44:25Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3700,7 +3716,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:01:21Z",
+      "fetched_at": "2026-07-14T12:01:36Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3708,7 +3724,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:44:46Z",
+      "fetched_at": "2026-07-14T12:44:39Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3716,7 +3732,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:45:09Z",
+      "fetched_at": "2026-07-14T12:45:03Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3724,7 +3740,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:45:27Z",
+      "fetched_at": "2026-07-14T12:45:21Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3732,7 +3748,7 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:45:58Z",
+      "fetched_at": "2026-07-14T12:45:52Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
@@ -3740,13 +3756,13 @@
     },
     {
       "error": "HTTP 404",
-      "fetched_at": "2026-07-13T12:46:20Z",
+      "fetched_at": "2026-07-14T12:46:11Z",
       "http_status": 404,
       "raw_json_path": null,
       "status": "failed",
       "subdirectory": "zicom-electronic-security-systems-ZICO"
     }
   ],
-  "run_id": 50,
-  "snapshot_date": "2026-07-13"
+  "run_id": 51,
+  "snapshot_date": "2026-07-14"
 }
