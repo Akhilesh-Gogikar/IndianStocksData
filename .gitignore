@@ -1,0 +1,12 @@
+# Bulk data artifacts are NOT distributed through git.
+#
+# The serving path is the direct upload in
+# scripts/run_tickertape_publish_pipeline.sh -> run_upload() ->
+# cerebral-insights-platform/scripts/load_tickertape_to_server.sh
+#
+# Committing these pushed hundreds of MB per daily refresh, and each
+# revision of the SQLite databases stored a full new copy in Git LFS
+# (tickertape.sqlite is 5.0 GB, market_intel.db is 1.3 GB).
+local_repository/raw/
+local_repository/tickertape.sqlite
+system/market_intel.db
