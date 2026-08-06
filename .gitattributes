@@ -1,0 +1,2 @@
+local_repository/tickertape.sqlite filter=lfs diff=lfs merge=lfs -text
+system/market_intel.db filter=lfs diff=lfs merge=lfs -text
